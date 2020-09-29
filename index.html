@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fafafa" />
+    <meta name="description" content="Bookshop. E-commerce Landingpage in HTML5, CSS3." />
+    <title>Bootstrap-Bookstore | E-commerce Landingpage</title>
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- icons-->
+    <link src="https://cdn.ic onmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" />
+    <link href="assets/icons/book.svg" rel="icon" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Pattaya|Poppins:400,500&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+</head>
+
+<body>
+    <!-- CONTAINER -->
+    <div class="container-fluid bg-light">
+        <!-- HEADER -->
+        <header id="header" class="header-menu bg-light">
+            <div class="navbar-top" role="complementary" aria-label="benefits">
+                <ul>
+                    <li>
+                        <strong>FREE Shipping</strong> 20&euro;. |
+                        <strong>Delivery-time</strong> 1 day. |
+                        <strong>Free Refund </strong> 30 days.
+                    </li>
+                </ul>
+            </div>
+            <div class="header-top row align-items-center justify-content-around p-4">
+                <div class="flex-container col-xs-4 col-sm-4 col-md-3 col-xl-3" role="primary" aria-label="navbar">
+                    <!-- LOGO -->
+                    <div class="logo" role="primary" aria-label="logo">
+                        <h1>Bookstore</h1>
+                    </div>
+                </div>
+                <!-- SEARCH TODO: add JS functionality -->
+                <form id="search" class="col-xs-4 col-sm-4 col-md-5 col-xl-6 input-group my-3" role="primary" aria-label="search">
+                    <input id="search" type="text" class="form-control form-control-sm" placeholder="Search a book" aria-label="Search book" aria-describedby="basic-addon2" />
+                    <div class="input-group-append">
+                        <button class="search-button btn btn-sm btn-outline-info" onclick="searchValid()" type="button">
+                <img
+                  src="assets/icons/magnifier.svg"
+                  alt="magnifier search-icon"
+                />
+              </button>
+                    </div>
+                </form>
+                <!-- LOGIN-REGISTRARSECTION TODO: add JS functionality  -->
+                <div class="col-xs-4 col-sm-4 col-md-4 col-xl-3 d-flex justify-content-end align-items-center align-content-center">
+                    <!--CART TODO: add JS functionality-->
+                    <ion-icon name="cart-outline">
+                        <button type="button" onclick="location.href='assets/html/cart.html'" class=" btn btn-sm btn-block"> Cart <span>0</span>
+                        <img
+                          src="assets/icons/shopping-cart.svg "
+                          alt="shopping-cart "
+                        />
+                      </button></ion-icon>
+                    <button type="button" onclick="location.href='#'" class="btn btn-sm btn-outline-info ml-1 ">Log In</button>
+                    <button type="button" onclick="location.href='#'" class="btn btn-sm btn-outline-info ml-1 ">Register</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-expand-md navbar-light col-lg-12 ">
+            <!--CATEGORIES SECTION-->
+            <section id="navbarSupportedContent " class="categories ">
+                <ul id="categories " class="li navbar-nav p-2 ">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#bestsellers">Bestsellers |</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#readers">Readers |</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#promotion">Promotion</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <!--MAIN-->
+        <main id="bookstore " class="flex-container ">
+            <!--HERO SECTION-->
+            <section class="hero jumbotron " class="row mx-0 ">
+                <div class="hero-card ">
+                    <h1 class="hero-title ">
+                        Books to read in September
+                        <button class="hero-button btn btn-large " href="# ">Read</button>
+                    </h1>
+                </div>
+            </section>
+
+            <!--BESTSELLERS-->
+            <section id="bestsellers" class="bestsellers row mx-0 ">
+                <article class="col-sm-12 mb-4 mt-2 ">
+                    <h3 class="text-center ">Bestsellers</h3>
+                </article>
+                <!--BESTSELLERS CAROUSEL-->
+                <article id="newCarousel " class="carousel slide " data-ride="carousel " data-interval="0 ">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active ">
+                            <div class="card-deck ">
+                                <div class="card card-1 d-none d-sm-block text-center ">
+                                    <a href="# " class="stretched-link ">
+                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/CleanCode.jpg" alt="Bookcover" />
+                                    </a>
+                                    <div class="card-body py-1 px-0 ">
+                                        <h6 class="card-title text-truncate px-1 ">
+                                            Clean Code: A Handbook of Agile Software Craftsmanship
+                                        </h6>
+                                        <h6 class="card-subtitle mb-2 text-muted ">
+                                            Robert C. Martin
+                                        </h6>
+                                        <p class="card-text ">40.55&euro;</p>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <button type="button " class="btn btn-sm btn-block ">
+                        <img
+                          src="assets/icons/shopping-cart.svg "
+                          alt="shopping-cart "
+                        />
+                      </button>
+                                    </div>
+                                </div>
+                                <div class="card card-2 d-none d-sm-block text-center ">
+                                    <a href="# " class="stretched-link ">
+                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/FrontendArchitecture.jpg" alt="Bookcover" />
+                                    </a>
+                                    <div class="card-body py-1 px-0 ">
+                                        <h6 class="card-title text-truncate px-1 ">
+                                            Frontend Architecture for Design Systems
+                                        </h6>
+                                        <h6 class="card-subtitle mb-2 text-muted ">
+                                            Micah Godbolt
+                                        </h6>
+                                        <p class="card-text ">27.21&euro;</p>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <button type="button " class="btn btn-sm btn-block ">
+                        <img
+                          src="assets/icons/shopping-cart.svg "
+                          alt="shopping-cart "
+                        />
+                      </button>
+                                    </div>
+                                </div>
+                                <div class="card card-3 d-none d-sm-block text-center ">
+                                    <a href="# " class="stretched-link ">
+                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/ResponsiveWeb.jpg" alt="Bookcover" />
+                                    </a>
+                                    <div class="card-body py-1 px-0 ">
+                                        <h6 class="card-title text-truncate px-1 ">
+                                            Responsive Web Design with HTML and CSSS
+                                        </h6>
+                                        <h6 class="card-subtitle mb-2 text-muted ">Ben Frain</h6>
+                                        <p class="card-text ">39.99&euro;</p>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <button type="button " class="btn btn-sm btn-block ">
+                        <img
+                          src="assets/icons/shopping-cart.svg "
+                          alt="shopping-cart "
+                        />
+                      </button>
+                                    </div>
+                                </div>
+                                <div class="card card-4 d-none d-sm-block text-center ">
+                                    <a href="# " class="stretched-link ">
+                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/JavaScript.jpg" alt="Bookcover" />
+                                    </a>
+                                    <div class="card-body py-1 px-0 ">
+                                        <h6 class="card-title text-truncate px-1 ">
+                                            JavaScript: The Definitive Guide
+                                        </h6>
+                                        <h6 class="card-subtitle mb-2 text-muted ">
+                                            David Flanagan
+                                        </h6>
+                                        <p class="card-text ">43.45&euro;</p>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <button type="button " class="btn btn-sm btn-block ">
+                        <img
+                          src="assets/icons/shopping-cart.svg "
+                          alt="shopping-cart "
+                        />
+                      </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!--READERS-->
+            <section id="readers" class="readers row mx-0 ">
+                <article class="col-sm-12 mb-4 mt-2 ">
+                    <h3 class="text-center ">Readers</h3>
+                </article>
+                <!-- READERS-CAROUSEL -->
+                <article id="newCarousel " class="carousel slide " data-ride="carousel " data-interval="0 ">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active ">
+                            <div class="card-deck ">
+                                <div class="card card-1 d-none d-sm-block text-center ">
+                                    <a href="# " class="stretched-link ">
+                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/DontMakeMeThink.jpg " alt="Bookcover " />
+                                    </a>
+                                    <div class="card-body py-1 px-0 ">
+                                        <h6 class="card-title text-truncate px-1 ">
+                                            Don´t make me think
+                                        </h6>
+                                        <h6 class="card-subtitle mb-2 text-muted ">Steve Krug</h6>
+                                        <p class="card-text ">16.20&euro;</p>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <button type="button " class="btn btn-sm btn-block ">
+                        <img
+                          src="assets/icons/shopping-cart.svg "
+                          alt="shopping-cart "
+                        />
+                      </button>
+                                    </div>
+                                </div>
+                                <div class="card card-2 d-none d-sm-block text-center ">
+                                    <a href="# " class="stretched-link ">
+                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/RoadToReact.jpg" alt="Bookcover" />
+                                    </a>
+                                    <div class="card-body py-1 px-0 ">
+                                        <h6 class="card-title text-truncate px-1 ">
+                                            The Road To React
+                                        </h6>
+                                        <h6 class="card-subtitle mb-2 text-muted ">
+                                            Robin Wieruch
+                                        </h6>
+                                        <p class="card-text ">27,65&euro;</p>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <button type="button " class="btn btn-sm btn-block ">
+                        <img
+                          src="assets/icons/shopping-cart.svg "
+                          alt="shopping-cart "
+                        />
+                      </button>
+                                    </div>
+                                </div>
+                                <div class="card card-3 d-none d-sm-block text-center ">
+                                    <a href="# " class="stretched-link ">
+                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/WebDevelopmentNodeExpress.jpg" alt="Bookcover" />
+                                    </a>
+                                    <div class="card-body py-1 px-0 ">
+                                        <h6 class="card-title text-truncate px-1 ">
+                                            Web Development with Node and Express
+                                        </h6>
+                                        <h6 class="card-subtitle mb-2 text-muted ">Ethan Brown</h6>
+                                        <p class="card-text ">32.99&euro;</p>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <button type="button " class="btn btn-sm btn-block ">
+                        <img
+                          src="assets/icons/shopping-cart.svg "
+                          alt="shopping-cart "
+                        />
+                      </button>
+                                    </div>
+                                </div>
+                                <div class="card card-4 d-none d-sm-block text-center ">
+                                    <a href="# " class="stretched-link ">
+                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/Web DevelopmentDesignHTML5.jpg" alt="Bookcover " />
+                                    </a>
+                                    <div class="card-body py-1 px-0 ">
+                                        <h6 class="card-title text-truncate px-1 ">
+                                            Web Development & Design Foundation with HTML5
+                                        </h6>
+                                        <h6 class="card-subtitle mb-2 text-muted ">
+                                            Terry Felke Morris
+                                        </h6>
+                                        <p class="card-text ">35.36&euro;</p>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <button type="button " class="btn btn-sm btn-block ">
+                        <img
+                          src="assets/icons/shopping-cart.svg "
+                          alt="shopping-cart "
+                        />
+                      </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!--PROMOTION-->
+            <section id="promotion" class="promotion row d-flex mx-0 ">
+                <div class="col-sm-12 mb-4 mt-2 ">
+                    <h4 class="text-center ">Promotion</h4>
+                </div>
+                <!-- PROMOTION-CAROUSEL -->
+                <article id="newCarousel " class="carousel slide " data-ride="carousel " data-interval="0 ">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active ">
+                            <div class="card-deck ">
+                                <div class="card card-1 d-none d-sm-block text-center ">
+                                    <a href="# " class="stretched-link ">
+                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/HTMLCSS.jpg " alt="Bookcover " />
+                                    </a>
+                                    <div class="card-body py-1 px-0 ">
+                                        <h6 class="card-title text-truncate px-1 ">HTML & CSS</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted ">Jon Duckett</h6>
+                                        <p class="card-text ">21&euro;</p>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <button type="button " class="btn btn-sm btn-block ">
+                        <img
+                          src="assets/icons/shopping-cart.svg "
+                          alt="shopping-cart "
+                        />
+                      </button>
+                                    </div>
+                                </div>
+                                <div class="card card-2 d-none d-sm-block text-center ">
+                                    <a href="# " class="stretched-link ">
+                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/SVGAnimations.jpg " alt="Bookcover " />
+                                    </a>
+                                    <div class="card-body py-1 px-0 ">
+                                        <h6 class="card-title text-truncate px-1 ">
+                                            SVG Animations
+                                        </h6>
+                                        <h6 class="card-subtitle mb-2 text-muted ">
+                                            Sarah Drasner
+                                        </h6>
+                                        <p class="card-text ">27,66&euro;</p>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <button type="button " class="btn btn-sm btn-block ">
+                        <img
+                          src="assets/icons/shopping-cart.svg "
+                          alt="shopping-cart "
+                        />
+                      </button>
+                                    </div>
+                                </div>
+                                <div class="card card-3 d-none d-sm-block text-center ">
+                                    <a href="# " class="stretched-link ">
+                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/TheCompleteWebsitePlanningGuide.jpg " alt="Bookcover " />
+                                    </a>
+                                    <div class="card-body py-1 px-0 ">
+                                        <h6 class="card-title text-truncate px-1 ">
+                                            The Complete Website Planning Guide
+                                        </h6>
+                                        <h6 class="card-subtitle mb-2 text-muted "></h6>
+                                        <p class="card-text ">21.99&euro;</p>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <button type="button " class="btn btn-sm btn-block ">
+                        <img
+                          src="assets/icons/shopping-cart.svg "
+                          alt="shopping-cart "
+                        />
+                      </button>
+                                    </div>
+                                </div>
+                                <div class="card card-4 d-none d-sm-block text-center ">
+                                    <a href="# " class="stretched-link ">
+                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/TheDesignWebApis.jpg " alt="Bookcover " />
+                                    </a>
+                                    <div class="card-body py-1 px-0 ">
+                                        <h6 class="card-title text-truncate px-1 ">
+                                            The Design of Web Apis
+                                        </h6>
+                                        <h6 class="card-subtitle mb-2 text-muted ">
+                                            Arnaud Lauret
+                                        </h6>
+                                        <p class="card-text ">44.99&euro;</p>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <button type="button " class="btn btn-sm btn-block ">
+                        <img
+                          src="assets/icons/shopping-cart.svg "
+                          alt="shopping-cart "
+                        />
+                      </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <hr />
+
+            <!--NEWSLETTER-->
+            <section id="newsletter " class="row d-flex mx-0 ">
+                <div class="col-sm-12 justify-content-center ">
+                    <h3 class="title text-center mb-4 ">
+                        Subscribe to Bookstore Newsletter
+                    </h3>
+                    <form name="subscribe" action=" " id="subscribe_form " onsubmit="return subscribeForm() " method="POST" autocomplete="on" class="needs-validation" novalidate>
+                        <div class="form-row d-flex justify-content-center mb-4 ">
+                            <div class="col-sm-2 ">
+                                <input type="text " id="inputName" class="form-control form-control-sm" placeholder="Name" required />
+                                <div id="name_error" class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" id="inputEmail" class="form-control form-control-sm" placeholder="Email" required />
+                                <div id="email_error" class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-sm-1">
+                                <button type="submit" onclick="messageValidate()" class="btn align-items-center btn-sm btn-primary mr-0 "> 
+                                    <a href="mailto:bookstore@gmail.com?subject=""> Subscribe </a>
+                        </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--FOOTER-->
+        <footer id="footer " class="flex-container pt-3 mb-0 pb-0 ">
+            <div id="social ">
+                <h5 class="title ">Follow us on:</h5>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/accounts/login/ ">
+                            <img src="assets/icons/instagram.svg " alt="Instagram Logo " class="instagram-icon " /></a>
+                        <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den-GB%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&hl=en-GB&gae=cb-p23934718&flowName=GlifWebSignIn&flowEntry=ServiceLogin ">
+                            <img src="assets/icons/youtube.svg " alt="YouTube Logo " class="youtube-icon " /></a>
+                    </li>
+                </ul>
+            </div>
+            <!--Legal SECTION-->
+            <div id="legal " class="site-footer " role="contentinfo ">
+                <ul class="li">
+                    <li>
+                        <p>
+                            <a href="/assets/html/privacy-policy.html ">Privacy Policy</a> |
+                            <a href="/assets/html/terms-conditions.html ">Terms of Use</a> |
+                            <a href="/assets/html/legal.html ">Legal</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <nav class="footer-nav " role="navigation">
+                <p>
+                    <strong> Copyright ©2020 | Bookstore. All rights reserved.</strong> | Coded with
+                    <img class="love " src="assets/icons/hearth.svg " alt="heart " /> by
+                    <a href="https://www.github.com/dianavile ">Diana Vilé.</a>
+                </p>
+            </nav>
+        </footer>
+        <!-- END CONTAINER -->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+</body>
+
+</html>
