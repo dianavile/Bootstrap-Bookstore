@@ -1,0 +1,93 @@
+/*colors*/
+
+:root {
+    --blue-color: #89b3f4;
+    --purple-color: #e3e0eb;
+    --salmon-color: #f9eadf;
+    --yellow-color: #fffbdf;
+}
+
+
+/*global styles*/
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #23286b;
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+    font-weight: 400;
+}
+
+main {
+    display: block;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+img {
+    border-style: none;
+    border-radius: 5%;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+    font-size: 90%;
+    line-height: 1.15;
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
+}
+
+
+/*header*/
+
+.header-top {
+    background: #E3E0EB;
+}
+
+
+/*logo*/
+
+.logo {
+    color: #23286b;
+    width: 90%;
+    font-family: "Pattaya", sans-serif;
+    flex: 1rem;
+    font-size: 2rem;
+    text-align: left;
+    margin: 1rem;
+    padding-top: 0.2rem;
+}
+
+.div-logo {
+    flex: 0.8rem;
+    margin: 2%;
+}
