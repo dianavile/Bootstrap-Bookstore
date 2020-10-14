@@ -56,8 +56,8 @@
                 <!-- LOGIN-REGISTRARSECTION TODO: add JS functionality  -->
                 <div class="col-xs-4 col-sm-4 col-md-4 col-xl-3 d-flex justify-content-end align-items-center align-content-center">
                     <!--CART TODO: add JS functionality-->
-                    <ion-icon name="cart-outline">
-                        <button type="button" onclick="location.href='assets/html/cart.html'" class=" btn btn-sm btn-block"> Cart <span>0</span>
+                    <ion-icon id="card" name="cart-outline">
+                        <button type="button" onclick="location.href='assets/html/cart.html'" class="btn btn-sm btn-outline-info ml-1"> Cart <span>0</span>
                         <img
                           src="assets/icons/shopping-cart.svg "
                           alt="shopping-cart "
@@ -93,8 +93,8 @@
             <section class="hero jumbotron " class="row mx-0 ">
                 <div class="hero-card ">
                     <h1 class="hero-title ">
-                        Books to read in September
-                        <button class="hero-button btn btn-large" href="#">Read</button>
+                        Books to read in 2020
+                        <button class="hero-button btn btn-large btn-outline-info ml-1" href="#">Read</button>
                     </h1>
                 </div>
             </section>
@@ -111,8 +111,9 @@
                             <div class="card-deck ">
                                 <div class="card card-1 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/CleanCode.jpg" alt="Bookcover" />
+                                        <img class="card-img-top img-fluid" src="assets/img/cards/CleanCode.jpg" alt="Bookcover" />
                                     </a>
+                                    <hr class="solid">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 ">
                                             Clean Code: A Handbook of Agile Software Craftsmanship
@@ -120,20 +121,17 @@
                                         <h6 class="card-subtitle mb-2 text-muted ">
                                             Robert C. Martin
                                         </h6>
-                                        <p class="card-text ">40.55&euro;</p>
-                                    </div>
-                                    <div class="card-footer ">
-                                        <button type="button " class="btn btn-sm btn-block ">
-                        <img
-                          src="assets/icons/shopping-cart.svg "
-                          alt="shopping-cart "
-                        />
-                      </button>
+                                        <hr class="solid">
+                                        <p class="card-text ">40.55&euro;
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
+                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
+                                        </button>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="card card-2 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/FrontendArchitecture.jpg" alt="Bookcover" />
+                                        <img class="card-img-top img-fluid" src="assets/img/cards/FrontendArchitecture.jpg" alt="Bookcover" />
                                     </a>
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 ">
@@ -142,41 +140,37 @@
                                         <h6 class="card-subtitle mb-2 text-muted ">
                                             Micah Godbolt
                                         </h6>
-                                        <p class="card-text ">27.21&euro;</p>
-                                    </div>
-                                    <div class="card-footer ">
-                                        <button type="button " class="btn btn-sm btn-block ">
-                        <img
-                          src="assets/icons/shopping-cart.svg "
-                          alt="shopping-cart "
-                        />
-                      </button>
+                                        <hr class="solid">
+                                        <p class="card-text ">27.21&euro;
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
+                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
+                                        </button>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="card card-3 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/ResponsiveWeb.jpg" alt="Bookcover" />
+                                        <img class="card-img-top img-fluid" src="assets/img/cards/ResponsiveWeb.jpg" alt="Bookcover" />
                                     </a>
+                                    <hr class="solid">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 ">
                                             Responsive Web Design with HTML and CSSS
                                         </h6>
                                         <h6 class="card-subtitle mb-2 text-muted ">Ben Frain</h6>
-                                        <p class="card-text ">39.99&euro;</p>
-                                    </div>
-                                    <div class="card-footer ">
-                                        <button type="button " class="btn btn-sm btn-block ">
-                        <img
-                          src="assets/icons/shopping-cart.svg "
-                          alt="shopping-cart "
-                        />
-                      </button>
+                                        <hr class="solid">
+                                        <p class="card-text ">39.99&euro;
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
+                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
+                                        </button>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="card card-4 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/JavaScript.jpg" alt="Bookcover" />
+                                        <img class="card-img-top img-fluid" src="assets/img/cards/JavaScript.jpg" alt="Bookcover" />
                                     </a>
+                                    <hr class="solid">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 ">
                                             JavaScript: The Definitive Guide
@@ -184,15 +178,12 @@
                                         <h6 class="card-subtitle mb-2 text-muted ">
                                             David Flanagan
                                         </h6>
-                                        <p class="card-text ">43.45&euro;</p>
-                                    </div>
-                                    <div class="card-footer ">
-                                        <button type="button " class="btn btn-sm btn-block ">
-                        <img
-                          src="assets/icons/shopping-cart.svg "
-                          alt="shopping-cart "
-                        />
-                      </button>
+                                        <hr class="solid">
+                                        <p class="card-text">43.45&euro;
+                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
+                                        </button>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -213,28 +204,27 @@
                             <div class="card-deck ">
                                 <div class="card card-1 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/DontMakeMeThink.jpg " alt="Bookcover " />
+                                        <img class="card-img-top img-fluid" src="assets/img/cards/DontMakeMeThink.jpg " alt="Bookcover " />
                                     </a>
+                                    <hr class="solid">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 ">
                                             Don´t make me think
                                         </h6>
                                         <h6 class="card-subtitle mb-2 text-muted ">Steve Krug</h6>
-                                        <p class="card-text ">16.20&euro;</p>
-                                    </div>
-                                    <div class="card-footer ">
-                                        <button type="button " class="btn btn-sm btn-block ">
-                        <img
-                          src="assets/icons/shopping-cart.svg "
-                          alt="shopping-cart "
-                        />
-                      </button>
+                                        <hr class="solid">
+                                        <p class="card-text">16.20&euro;
+                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
+                                        </button>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="card card-2 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/RoadToReact.jpg" alt="Bookcover" />
+                                        <img class="card-img-top img-fluid" src="assets/img/cards/RoadToReact.jpg" alt="Bookcover" />
                                     </a>
+                                    <hr class="solid">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 ">
                                             The Road To React
@@ -242,41 +232,37 @@
                                         <h6 class="card-subtitle mb-2 text-muted ">
                                             Robin Wieruch
                                         </h6>
-                                        <p class="card-text ">27,65&euro;</p>
-                                    </div>
-                                    <div class="card-footer ">
-                                        <button type="button " class="btn btn-sm btn-block ">
-                        <img
-                          src="assets/icons/shopping-cart.svg "
-                          alt="shopping-cart "
-                        />
-                      </button>
+                                        <hr class="solid">
+                                        <p class="card-text">27,65&euro;
+                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
+                                        </button>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="card card-3 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/WebDevelopmentNodeExpress.jpg" alt="Bookcover" />
+                                        <img class="card-img-top img-fluid" src="assets/img/cards/WebDevelopmentNodeExpress.jpg" alt="Bookcover" />
                                     </a>
+                                    <hr class="solid">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 ">
                                             Web Development with Node and Express
                                         </h6>
                                         <h6 class="card-subtitle mb-2 text-muted ">Ethan Brown</h6>
-                                        <p class="card-text ">32.99&euro;</p>
-                                    </div>
-                                    <div class="card-footer ">
-                                        <button type="button " class="btn btn-sm btn-block ">
-                        <img
-                          src="assets/icons/shopping-cart.svg "
-                          alt="shopping-cart "
-                        />
-                      </button>
+                                        <hr class="solid">
+                                        <p class="card-text">32.99&euro;
+                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
+                                        </button>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="card card-4 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/Web DevelopmentDesignHTML5.jpg" alt="Bookcover " />
+                                        <img class="card-img-top img-fluid" src="assets/img/cards/Web DevelopmentDesignHTML5.jpg" alt="Bookcover " />
                                     </a>
+                                    <hr class="solid">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 ">
                                             Web Development & Design Foundation with HTML5
@@ -284,15 +270,12 @@
                                         <h6 class="card-subtitle mb-2 text-muted ">
                                             Terry Felke Morris
                                         </h6>
-                                        <p class="card-text ">35.36&euro;</p>
-                                    </div>
-                                    <div class="card-footer ">
-                                        <button type="button " class="btn btn-sm btn-block ">
-                        <img
-                          src="assets/icons/shopping-cart.svg "
-                          alt="shopping-cart "
-                        />
-                      </button>
+                                        <hr class="solid">
+                                        <p class="card-text ">35.36&euro;
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
+                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
+                                        </button>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -313,26 +296,25 @@
                             <div class="card-deck ">
                                 <div class="card card-1 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/HTMLCSS.jpg " alt="Bookcover " />
+                                        <img class="card-img-top img-fluid" src="assets/img/cards/HTMLCSS.jpg " alt="Bookcover " />
                                     </a>
+                                    <hr class="solid">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 ">HTML & CSS</h6>
                                         <h6 class="card-subtitle mb-2 text-muted ">Jon Duckett</h6>
-                                        <p class="card-text ">21&euro;</p>
-                                    </div>
-                                    <div class="card-footer ">
-                                        <button type="button " class="btn btn-sm btn-block ">
-                        <img
-                          src="assets/icons/shopping-cart.svg "
-                          alt="shopping-cart "
-                        />
-                      </button>
+                                        <hr class="solid">
+                                        <p class="card-text ">21&euro;
+                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
+                                        </button>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="card card-2 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/SVGAnimations.jpg " alt="Bookcover " />
+                                        <img class="card-img-top img-fluid" src="assets/img/cards/SVGAnimations.jpg " alt="Bookcover " />
                                     </a>
+                                    <hr class="solid">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 ">
                                             SVG Animations
@@ -340,41 +322,37 @@
                                         <h6 class="card-subtitle mb-2 text-muted ">
                                             Sarah Drasner
                                         </h6>
-                                        <p class="card-text ">27,66&euro;</p>
-                                    </div>
-                                    <div class="card-footer ">
-                                        <button type="button " class="btn btn-sm btn-block ">
-                        <img
-                          src="assets/icons/shopping-cart.svg "
-                          alt="shopping-cart "
-                        />
-                      </button>
+                                        <hr class="solid">
+                                        <p class="card-text ">27,66&euro;
+                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
+                                        </button>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="card card-3 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/TheCompleteWebsitePlanningGuide.jpg " alt="Bookcover " />
+                                        <img class="card-img-top img-fluid" src="assets/img/cards/TheCompleteWebsitePlanningGuide.jpg " alt="Bookcover " />
                                     </a>
+                                    <hr class="solid">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 ">
                                             The Complete Website Planning Guide
                                         </h6>
                                         <h6 class="card-subtitle mb-2 text-muted "></h6>
-                                        <p class="card-text ">21.99&euro;</p>
-                                    </div>
-                                    <div class="card-footer ">
-                                        <button type="button " class="btn btn-sm btn-block ">
-                        <img
-                          src="assets/icons/shopping-cart.svg "
-                          alt="shopping-cart "
-                        />
-                      </button>
+                                        <hr class="solid">
+                                        <p class="card-text ">21.99&euro;
+                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
+                                        </button>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="card card-4 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid mx-auto my-2 " src="assets/img/cards/TheDesignWebApis.jpg " alt="Bookcover " />
+                                        <img class="card-img-top img-fluid" src="assets/img/cards/TheDesignWebApis.jpg " alt="Bookcover " />
                                     </a>
+                                    <hr class="solid">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 ">
                                             The Design of Web Apis
@@ -382,15 +360,12 @@
                                         <h6 class="card-subtitle mb-2 text-muted ">
                                             Arnaud Lauret
                                         </h6>
-                                        <p class="card-text ">44.99&euro;</p>
-                                    </div>
-                                    <div class="card-footer ">
-                                        <button type="button " class="btn btn-sm btn-block ">
-                        <img
-                          src="assets/icons/shopping-cart.svg "
-                          alt="shopping-cart "
-                        />
-                      </button>
+                                        <hr class="solid">
+                                        <p class="card-text ">44.99&euro;
+                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
+                                        </button>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -469,5 +444,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
 </body>
+
+</html>
 
 </html>

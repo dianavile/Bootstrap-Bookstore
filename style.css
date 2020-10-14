@@ -1,6 +1,6 @@
 /*colors*/
 
-:root {
+ :root {
     --blue-color: #89b3f4;
     --purple-color: #e3e0eb;
     --salmon-color: #f9eadf;
@@ -140,16 +140,27 @@ textarea {
     color: #23286b;
     background-color: #ffffff;
     font-family: "Pattaya", sans-serif;
-    border-style: 5px solid #23286b !important;
+    border-style: 1px solid #23286b !important;
+}
+
+
+/*button cart*/
+
+.card-button {
+    color: #23286b;
+    background-color: #fffbdf;
+    border-style: 1px solid #23286b;
+    max-height: 31px;
 }
 
 
 /*button login, signin*/
 
-.btn.btn-sm.btn.ml-1 {
+.btn.btn-sm {
     color: #23286b;
     background-color: #fffbdf;
-    border-style: 5px solid #23286b;
+    border-style: 1px solid #23286b;
+    max-height: 31px;
 }
 
 
@@ -204,6 +215,19 @@ textarea {
 .card {
     border-radius: 5%;
 }
+
+
+/* Solid border */
+
+hr.solid {
+    border-top: 2px solid #23286b;
+}
+
+
+/*
+.card-img-top img-fluid sm-auto my-1 {
+    padding: 0%;
+}*/
 
 
 /* Newsletter */
