@@ -69,7 +69,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="container">
-                                        <form method="POST" id="registerform" name="registerForm" action="form.html" onsubmit="return registerValidate()" autocomplete="on">
+                                        <form method="POST" id="registerform" name="registerForm" action="form.php" onsubmit="return registerValidate()" autocomplete="on">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label for="inputEmail">Email</label>
@@ -80,6 +80,11 @@
                                                 <div class="form-group col-md-6">
                                                     <label for="inputPassword">Password</label>
                                                     <input id="inputPassword" type="password" class="form-control" placeholder="Password">
+                                                    <div id="password_error" class="invalid-feedback"></div>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPassword">Repeat Password</label>
+                                                    <input id="currentPassword" type="currentPassword" class="form-control" placeholder="Password">
                                                     <div id="password_error" class="invalid-feedback"></div>
                                                 </div>
                                             </div>
@@ -146,11 +151,20 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form id="loginform" action="login.php" method="post" onsubmit="return loginForm()">
-                                        <input id="emailfield" type="text" value="name@gmail.com" autocomplete="username" class="form-control" placeholder="Username" />
-                                        <div id="email_error" class="invalid-feedback"></div>
-                                        <input id="inputPassword" type="password" autocomplete="current-password" class="form-control" placeholder="Password" />
-                                        <div id="password_error" class="invalid-feedback "></div>
+                                    <form method="POST" id="loginform" name="loginForm" action="login.php" method="post" onsubmit="return loginValidate()" autocomplete="on">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail">Email</label>
+                                                <input id="emailfield" class="form-control" type="text" value="name@gmail.com" placeholder="Email">
+                                                <div id="email_error" class="invalid-feedback"></div>
+                                            </div>
+                                            <div class="w-100"></div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputPassword">Password</label>
+                                                <input id="inputPassword" type="password" class="form-control" autocomplete="current-password" placeholder="Password">
+                                                <div id="password_error" class="invalid-feedback"></div>
+                                            </div>
+                                        </div>
                                         <button type="submit" class="btn btn-sm btn-outline-info ml-1" value="login">Login</button>
                                     </form>
                                 </div>
