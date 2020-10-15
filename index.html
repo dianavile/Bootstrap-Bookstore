@@ -53,65 +53,6 @@
 
                 <!--TODO: CARD; LOGIN, REGISTER add JS functionality-->
                 <div class="col-xs-4 col-sm-4 col-md-4 col-xl-3 d-flex justify-content-end align-items-center align-content-center">
-                    <!-- CARD Button trigger modal -->
-                    <button type="button" class="btn btn-sm btn-outline-info ml-1" data-toggle="modal" data-target="#cardModal">
-                        <img src="assets/icons/shopping-cart.svg "alt="shopping-cart"/>
-                    </button>
-                    <!-- CARD Modal -->
-                    <div class="modal fade container-fluid" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="cardModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="logo" role="primary" aria-label="logo">
-                                        <h2 class="modal-title" id="exampleModalLabel">Bookstore Card</h2>
-                                    </div>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true ">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body ">...</div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- LOGIN Button trigger modal -->
-                    <button type="button" class="btn btn-sm btn-outline-info ml-1" data-toggle="modal" data-target="#loginModal">Login</button>
-                    <!-- Login Modal -->
-                    <div class="modal fade container-fluid" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true ">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="logo" role="primary" aria-label="logo">
-                                        <h2 class="modal-title" id="loginModalLabel">Bookstore Login</h2>
-                                    </div>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true ">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form id="login" action="login.php" id="login_form" onsubmit="return loginForm() " method="post " class="needs-validation">
-                                        <input type="text" class="form-control" id="inputUsername" placeholder="Username" autocomplete="username" />
-                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" autocomplete="current-password" />
-                                        <div id="password_error" class="invalid-feedback"></div>
-                                        <input type="text" class="form-control" id="inputEmail" placeholder="Email" />
-                                        <div id="email_error" class="invalid-feedback"></div>
-                                        <button type="submit" class="btn btn-primary" value="login">Login</button>
-                                        <h6 class="font-weight-light">
-                                            <a href="#"> New around here? Sign up </a>
-                                        </h6>
-                                    </form>
-                                </div>
-                                <div class="modal-footer ">
-                                    <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
-                                    <button type="button " class="btn btn-primary ">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <!-- REGISTER Button trigger modal -->
                     <button type="button" class="btn btn-sm btn-outline-info ml-1" data-toggle="modal" data-target="#registerModal"> Register</button>
@@ -132,13 +73,11 @@
                                         <form name="register" action="form.html" id="register_form" onsubmit="return registerForm()" method="POST" autocomplete="on" class="needs-validation" validate>
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail">Email</label>
                                                     <input type="text" class="form-control" id="inputEmail" placeholder="Email" />
                                                     <div id="email_error" class="invalid-feedback"></div>
                                                 </div>
                                                 <div class="w-100"></div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputPassword">Password</label>
                                                     <input type="password" class="form-control" id="inputPassword" placeholder="Password" />
                                                     <div id="password_error" class="invalid-feedback"></div>
                                                 </div>
@@ -150,7 +89,8 @@
                                                     <div id="grid_error" class="invalid-feedback"></div>
                                                 </div>
                                             </div>
-                                            <button type="submit" class="btn">Register</button>
+                                            <button type="submit" class="btn btn-sm btn-outline-info ml-1">Register</button>
+
                                             <h6 class="font-weight-light">
                                                 <a href="#"> Already registered? Log In </a>
                                             </h6>
@@ -158,8 +98,67 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button type="button" class="btn btn-sm btn-outline-info ml-1" data-dismiss="modal">Edit</button>
+                                    <button type="button" class="btn btn-sm btn-outline-info ml-1">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LOGIN Button trigger modal -->
+                    <button type="button" class="btn btn-sm btn-outline-info ml-1" data-toggle="modal" data-target="#loginModal">Login</button>
+                    <!-- Login Modal -->
+                    <div class="modal fade container-fluid" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true ">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="logo" role="primary" aria-label="logo">
+                                        <h2 class="modal-title" id="loginModalLabel">Bookstore Login</h2>
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="login" action="login.php" id="login_form" method="post" onsubmit="return loginForm()">
+                                        <input id="emailfield" type="text" value="name@gmail.com" autocomplete=" username" class="form-control" placeholder="Username" />
+                                        <div id="email_error" class="invalid-feedback"></div>
+                                        <input type="password" autocomplete="current-password" class="form-control" id="inputPassword" placeholder="Password" />
+                                        <div id="password_error" class="invalid-feedback "></div>
+                                        <button type="submit" class="btn btn-sm btn-outline-info ml-1" value="login">Login</button>
+                                        <h6 class="font-weight-light">
+                                            <a href="#"> New? Sign up </a>
+                                        </h6>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-sm btn-outline-info ml-1" data-dismiss="modal">Edit</button>
+                                    <button type="button" class="btn btn-sm btn-outline-info ml-1">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD Button trigger modal -->
+                    <button type="button" class="btn btn-sm btn-outline-info ml-1" data-toggle="modal" data-target="#cardModal">
+                        <img src="assets/icons/shopping-cart.svg "alt="shopping-cart"/>
+                    </button>
+                    <!-- CARD Modal -->
+                    <div class="modal fade container-fluid" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="cardModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="logo" role="primary" aria-label="logo">
+                                        <h2 class="modal-title" id="exampleModalLabel ">Bookstore Card</h2>
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true ">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body ">...</div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-sm btn-outline-info ml-1" data-dismiss="modal">Edit</button>
+                                    <button type="button" class="btn btn-sm btn-outline-info ml-1">Save</button>
                                 </div>
                             </div>
                         </div>
@@ -187,9 +186,9 @@
         </nav>
 
         <!--MAIN-->
-        <main id="bookstore" class="flex-container">
+        <main id="bookstore " class="flex-container ">
             <!--HERO SECTION-->
-            <section class="hero jumbotron" class="row mx-0">
+            <section class="hero jumbotron " class="row mx-0 ">
                 <div class="hero-card ">
                     <h1 class="hero-title ">
                         Books to read in 2020
@@ -199,48 +198,48 @@
             </section>
 
             <!--BESTSELLERS-->
-            <section id="bestsellers" class="bestsellers row mx-0">
-                <article class="col-sm-12 mb-4 mt-2">
-                    <h3 class="text-center">Bestsellers</h3>
+            <section id="bestsellers " class="bestsellers row mx-0 ">
+                <article class="col-sm-12 mb-4 mt-2 ">
+                    <h3 class="text-center ">Bestsellers</h3>
                 </article>
                 <!--BESTSELLERS CAROUSEL-->
-                <article id="newCarousel" class="carousel slide" data-ride="carousel" data-interval="0 ">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="card-deck">
-                                <div class="card card-1 d-none d-sm-block text-center">
-                                    <img class="card-img-top img-fluid" src="assets/img/cards/CleanCode.jpg" alt="Bookcover" />
-                                    <hr class="solid">
-                                    <div class="card-body py-1 px-0">
-                                        <h6 class="card-title text-truncate px-1"> Clean Code</h6>
-                                        <h6 class="card-subtitle mb-2 text-muted"> Robert C. Martin</h6>
-                                        <hr class="solid">
-                                        <p class="card-text">40.55&euro;
-                                            <button type="button" class="btn btn-sm btn-outline-info ml-1">
-                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart"/>
+                <article id="newCarousel " class="carousel slide " data-ride="carousel " data-interval="0 ">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active ">
+                            <div class="card-deck ">
+                                <div class="card card-1 d-none d-sm-block text-center ">
+                                    <img class="card-img-top img-fluid " src="assets/img/cards/CleanCode.jpg " alt="Bookcover " />
+                                    <hr class="solid ">
+                                    <div class="card-body py-1 px-0 ">
+                                        <h6 class="card-title text-truncate px-1 "> Clean Code</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted "> Robert C. Martin</h6>
+                                        <hr class="solid ">
+                                        <p class="card-text ">40.55&euro;
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
+                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
                                         </button>
                                         </p>
                                     </div>
                                 </div>
-                                <div class="card card-2 d-none d-sm-block text-center">
-                                    <img class="card-img-top img-fluid" src="assets/img/cards/FrontendArchitecture.jpg" alt="Bookcover" />
-                                    <div class="card-body py-1 px-0">
-                                        <h6 class="card-title text-truncate px-1"> Frontend Architecture </h6>
-                                        <h6 class="card-subtitle mb-2 text-muted"> Micah Godbolt</h6>
-                                        <hr class="solid">
-                                        <p class="card-text">27.21&euro;
-                                            <button type="button" class="btn btn-sm btn-outline-info ml-1">
-                                            <img src="assets/icons/shopping-cart.svg" alt="shopping-cart"/>
+                                <div class="card card-2 d-none d-sm-block text-center ">
+                                    <img class="card-img-top img-fluid " src="assets/img/cards/FrontendArchitecture.jpg " alt="Bookcover " />
+                                    <div class="card-body py-1 px-0 ">
+                                        <h6 class="card-title text-truncate px-1 "> Frontend Architecture </h6>
+                                        <h6 class="card-subtitle mb-2 text-muted "> Micah Godbolt</h6>
+                                        <hr class="solid ">
+                                        <p class="card-text ">27.21&euro;
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
+                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
                                         </button>
                                         </p>
                                     </div>
                                 </div>
-                                <div class="card card-3 d-none d-sm-block text-center">
-                                    <a href="#" class="stretched-link">
-                                        <img class="card-img-top img-fluid" src="assets/img/cards/ResponsiveWeb.jpg" alt="Bookcover" />
+                                <div class="card card-3 d-none d-sm-block text-center ">
+                                    <a href="# " class="stretched-link ">
+                                        <img class="card-img-top img-fluid " src="assets/img/cards/ResponsiveWeb.jpg " alt="Bookcover " />
                                     </a>
-                                    <hr class="solid">
-                                    <div class="card-body py-1 px-0">
+                                    <hr class="solid ">
+                                    <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 "> Responsive Web Design </h6>
                                         <h6 class="card-subtitle mb-2 text-muted "> Ben Frain</h6>
                                         <hr class="solid ">
@@ -251,15 +250,15 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="card card-4 d-none d-sm-block text-center">
-                                    <img class="card-img-top img-fluid" src="assets/img/cards/JavaScript.jpg" alt="Bookcover" />
-                                    <hr class="solid">
-                                    <h6 class="card-title text-truncate px-1"> JavaScript: The Definitive Guide </h6>
-                                    <h6 class="card-subtitle mb-2 text-muted"> David Flanagan</h6>
-                                    <hr class="solid">
-                                    <div class="card-body py-1 px-0">
-                                        <p class="card-text">43.45&euro;
-                                            <button type="button " class="btn btn-sm btn-outline-info ml-1">
+                                <div class="card card-4 d-none d-sm-block text-center ">
+                                    <img class="card-img-top img-fluid " src="assets/img/cards/JavaScript.jpg " alt="Bookcover " />
+                                    <hr class="solid ">
+                                    <h6 class="card-title text-truncate px-1 "> JavaScript: The Definitive Guide </h6>
+                                    <h6 class="card-subtitle mb-2 text-muted "> David Flanagan</h6>
+                                    <hr class="solid ">
+                                    <div class="card-body py-1 px-0 ">
+                                        <p class="card-text ">43.45&euro;
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
                                             <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
                                         </button>
                                         </p>
@@ -272,16 +271,16 @@
             </section>
 
             <!--READERS-->
-            <section id="readers" class="readers row mx-0">
-                <article class="col-sm-12 mb-4 mt-2">
+            <section id="readers " class="readers row mx-0 ">
+                <article class="col-sm-12 mb-4 mt-2 ">
                     <h3 class="text-center ">Readers</h3>
                 </article>
                 <!-- READERS-CAROUSEL -->
-                <article id="newCarousel" class="carousel slide " data-ride="carousel" data-interval="0">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="card-deck">
-                                <div class="card card-1 d-none d-sm-block text-center">
+                <article id="newCarousel " class="carousel slide " data-ride="carousel " data-interval="0 ">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active ">
+                            <div class="card-deck ">
+                                <div class="card card-1 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
                                         <img class="card-img-top img-fluid " src="assets/img/cards/DontMakeMeThink.jpg " alt="Bookcover " />
                                     </a>
@@ -352,7 +351,7 @@
             </section>
 
             <!--PROMOTION-->
-            <section id="promotion" class="promotion row d-flex mx-0">
+            <section id="promotion " class="promotion row d-flex mx-0 ">
                 <div class="col-sm-12 mb-4 mt-2 ">
                     <h4 class="text-center ">Promotion</h4>
                 </div>
@@ -433,7 +432,7 @@
             <hr />
 
             <!--NEWSLETTER-->
-            <section id="newsletter" class="row d-flex mx-0">
+            <section id="newsletter " class="row d-flex mx-0 ">
                 <div class="col-sm-12 justify-content-center ">
                     <h3 class="title text-center mb-4 ">
                         Subscribe to Bookstore Newsletter
@@ -451,7 +450,7 @@
                             <div class="col-sm-1 ">
                                 <button type="submit " onclick="messageValidate() " class="btn align-items-center btn-sm btn-primary mr-0 "> 
                                     <a href="mailto:bookstore@gmail.com?subject=""> Subscribe </a>
-                    </button>
+                                        </button>
                             </div>
                         </div>
                     </form>
