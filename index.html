@@ -116,12 +116,12 @@
                     <!-- REGISTER Button trigger modal -->
                     <button type="button" class="btn btn-sm btn-outline-info ml-1" data-toggle="modal" data-target="#registerModal"> Register</button>
                     <!--Register Modal -->
-                    <div class="modal fade container" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+                    <div class="modal fade container-fluid" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <div class="logo" role="primary" aria-label="logo">
-                                        <h2 class="modal-title" id="registerModalLabel">Register to Bookstore</h2>
+                                        <h2 class="modal-title" id="registerModalLabel">Bookstore Registration</h2>
                                     </div>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
@@ -187,9 +187,9 @@
         </nav>
 
         <!--MAIN-->
-        <main id="bookstore " class="flex-container ">
+        <main id="bookstore" class="flex-container">
             <!--HERO SECTION-->
-            <section class="hero jumbotron " class="row mx-0 ">
+            <section class="hero jumbotron" class="row mx-0">
                 <div class="hero-card ">
                     <h1 class="hero-title ">
                         Books to read in 2020
@@ -199,56 +199,48 @@
             </section>
 
             <!--BESTSELLERS-->
-            <section id="bestsellers " class="bestsellers row mx-0 ">
-                <article class="col-sm-12 mb-4 mt-2 ">
-                    <h3 class="text-center ">Bestsellers</h3>
+            <section id="bestsellers" class="bestsellers row mx-0">
+                <article class="col-sm-12 mb-4 mt-2">
+                    <h3 class="text-center">Bestsellers</h3>
                 </article>
                 <!--BESTSELLERS CAROUSEL-->
-                <article id="newCarousel " class="carousel slide " data-ride="carousel " data-interval="0 ">
-                    <div class="carousel-inner ">
-                        <div class="carousel-item active ">
-                            <div class="card-deck ">
-                                <div class="card card-1 d-none d-sm-block text-center ">
-                                    <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid " src="assets/img/cards/CleanCode.jpg " alt="Bookcover " />
-                                    </a>
-                                    <hr class="solid ">
-                                    <div class="card-body py-1 px-0 ">
-                                        <h6 class="card-title text-truncate px-1 ">
-                                            Clean Code
-                                        </h6>
-                                        <h6 class="card-subtitle mb-2 text-muted ">
-                                            Robert C. Martin
-                                        </h6>
-                                        <hr class="solid ">
-                                        <p class="card-text ">40.55&euro;
-                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
-                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
+                <article id="newCarousel" class="carousel slide" data-ride="carousel" data-interval="0 ">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card-deck">
+                                <div class="card card-1 d-none d-sm-block text-center">
+                                    <img class="card-img-top img-fluid" src="assets/img/cards/CleanCode.jpg" alt="Bookcover" />
+                                    <hr class="solid">
+                                    <div class="card-body py-1 px-0">
+                                        <h6 class="card-title text-truncate px-1"> Clean Code</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted"> Robert C. Martin</h6>
+                                        <hr class="solid">
+                                        <p class="card-text">40.55&euro;
+                                            <button type="button" class="btn btn-sm btn-outline-info ml-1">
+                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart"/>
                                         </button>
                                         </p>
                                     </div>
                                 </div>
-                                <div class="card card-2 d-none d-sm-block text-center ">
-                                    <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid " src="assets/img/cards/FrontendArchitecture.jpg " alt="Bookcover " />
-                                    </a>
-                                    <div class="card-body py-1 px-0 ">
-                                        <h6 class="card-title text-truncate px-1 "> Frontend Architecture </h6>
-                                        <h6 class="card-subtitle mb-2 text-muted "> Micah Godbolt</h6>
-                                        <hr class="solid ">
-                                        <p class="card-text ">27.21&euro;
-                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
-                                            <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
+                                <div class="card card-2 d-none d-sm-block text-center">
+                                    <img class="card-img-top img-fluid" src="assets/img/cards/FrontendArchitecture.jpg" alt="Bookcover" />
+                                    <div class="card-body py-1 px-0">
+                                        <h6 class="card-title text-truncate px-1"> Frontend Architecture </h6>
+                                        <h6 class="card-subtitle mb-2 text-muted"> Micah Godbolt</h6>
+                                        <hr class="solid">
+                                        <p class="card-text">27.21&euro;
+                                            <button type="button" class="btn btn-sm btn-outline-info ml-1">
+                                            <img src="assets/icons/shopping-cart.svg" alt="shopping-cart"/>
                                         </button>
                                         </p>
                                     </div>
                                 </div>
-                                <div class="card card-3 d-none d-sm-block text-center ">
-                                    <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid " src="assets/img/cards/ResponsiveWeb.jpg " alt="Bookcover " />
+                                <div class="card card-3 d-none d-sm-block text-center">
+                                    <a href="#" class="stretched-link">
+                                        <img class="card-img-top img-fluid" src="assets/img/cards/ResponsiveWeb.jpg" alt="Bookcover" />
                                     </a>
-                                    <hr class="solid ">
-                                    <div class="card-body py-1 px-0 ">
+                                    <hr class="solid">
+                                    <div class="card-body py-1 px-0">
                                         <h6 class="card-title text-truncate px-1 "> Responsive Web Design </h6>
                                         <h6 class="card-subtitle mb-2 text-muted "> Ben Frain</h6>
                                         <hr class="solid ">
@@ -259,17 +251,15 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="card card-4 d-none d-sm-block text-center ">
-                                    <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid " src="assets/img/cards/JavaScript.jpg " alt="Bookcover " />
-                                    </a>
-                                    <hr class="solid ">
-                                    <h6 class="card-title text-truncate px-1 "> JavaScript: The Definitive Guide </h6>
-                                    <h6 class="card-subtitle mb-2 text-muted "> David Flanagan</h6>
-                                    <hr class="solid ">
-                                    <div class="card-body py-1 px-0 ">
-                                        <p class="card-text ">43.45&euro;
-                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
+                                <div class="card card-4 d-none d-sm-block text-center">
+                                    <img class="card-img-top img-fluid" src="assets/img/cards/JavaScript.jpg" alt="Bookcover" />
+                                    <hr class="solid">
+                                    <h6 class="card-title text-truncate px-1"> JavaScript: The Definitive Guide </h6>
+                                    <h6 class="card-subtitle mb-2 text-muted"> David Flanagan</h6>
+                                    <hr class="solid">
+                                    <div class="card-body py-1 px-0">
+                                        <p class="card-text">43.45&euro;
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1">
                                             <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
                                         </button>
                                         </p>
@@ -282,16 +272,16 @@
             </section>
 
             <!--READERS-->
-            <section id="readers " class="readers row mx-0 ">
-                <article class="col-sm-12 mb-4 mt-2 ">
+            <section id="readers" class="readers row mx-0">
+                <article class="col-sm-12 mb-4 mt-2">
                     <h3 class="text-center ">Readers</h3>
                 </article>
                 <!-- READERS-CAROUSEL -->
-                <article id="newCarousel " class="carousel slide " data-ride="carousel " data-interval="0 ">
-                    <div class="carousel-inner ">
-                        <div class="carousel-item active ">
-                            <div class="card-deck ">
-                                <div class="card card-1 d-none d-sm-block text-center ">
+                <article id="newCarousel" class="carousel slide " data-ride="carousel" data-interval="0">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card-deck">
+                                <div class="card card-1 d-none d-sm-block text-center">
                                     <a href="# " class="stretched-link ">
                                         <img class="card-img-top img-fluid " src="assets/img/cards/DontMakeMeThink.jpg " alt="Bookcover " />
                                     </a>
@@ -362,7 +352,7 @@
             </section>
 
             <!--PROMOTION-->
-            <section id="promotion " class="promotion row d-flex mx-0 ">
+            <section id="promotion" class="promotion row d-flex mx-0">
                 <div class="col-sm-12 mb-4 mt-2 ">
                     <h4 class="text-center ">Promotion</h4>
                 </div>
@@ -443,7 +433,7 @@
             <hr />
 
             <!--NEWSLETTER-->
-            <section id="newsletter " class="row d-flex mx-0 ">
+            <section id="newsletter" class="row d-flex mx-0">
                 <div class="col-sm-12 justify-content-center ">
                     <h3 class="title text-center mb-4 ">
                         Subscribe to Bookstore Newsletter
