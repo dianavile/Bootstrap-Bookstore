@@ -1,6 +1,6 @@
 /* jshint esversion:6*/
 
-const form = document.getElementById('myFormId');
+const form = document.getElementById('register.form');
 
 function registerValidate() {
 	let acumErrores = 0;
