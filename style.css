@@ -234,12 +234,6 @@ hr.solid {
 }
 
 
-/*
-.card-img-top img-fluid sm-auto my-1 {
-    padding: 0%;
-}*/
-
-
 /* Newsletter */
 
 .h4.title {
@@ -270,11 +264,13 @@ footer {
     .readers,
     .promotions,
     .card {
-        flex-direction: column;
+        flex-direction: row;
         align-content: center;
     }
     .div.card {
         width: 100%;
+        align-self: center;
+        align-content: center;
     }
 }
 
