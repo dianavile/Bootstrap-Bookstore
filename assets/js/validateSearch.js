@@ -9,9 +9,9 @@ function registerValidate() {
 	
 	const inputSearch = document.getElementById('inputSearch');	
 	
-	if(inputSearch.value == "" || inputZip.length<3) {
-		inputZip.classList.add("is-invalid");
-		document.getElementById("errorZip").textContent = "This searchword does not meet requirements.";
+	if(inputSearch.value == "" || inputSearch.length<3) {
+		inputSearch.classList.add("is-invalid");
+		document.getElementById("errorSearch").textContent = "This searchword does not meet requirements.";
 		acumErrores ++;
 	}
 	
