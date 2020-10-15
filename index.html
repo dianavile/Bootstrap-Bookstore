@@ -43,7 +43,7 @@
                 </div>
                 <!-- SEARCH TODO: add JS functionality -->
                 <form id="search" class="col-xs-4 col-sm-4 col-md-5 col-xl-6 input-group my-3" role="primary" aria-label="search">
-                    <input id="search" type="text" class="form-control form-control-sm" placeholder="Search a book" aria-label="Search book" aria-describedby="basic-addon2" />
+                    <input id="searchbar" type="text" class="form-control form-control-sm" placeholder="Search a book" aria-label="Search book" aria-describedby="basic-addon2" />
                     <div class="input-group-append">
                         <button class="search-button btn btn-sm btn-outline-info" onclick="inSearchValid()" type="button">
                             <img src="assets/icons/magnifier.svg" alt="magnifier search-icon"/>
@@ -70,7 +70,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="container">
-                                        <form name="register" action="form.html" id="register_form" onsubmit="return registerForm()" method="POST" autocomplete="on" class="needs-validation" validate>
+                                        <form id="registerform" name="register" action="form.html" onsubmit="return registerForm()" method="POST" autocomplete="on" class="needs-validation" validate>
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <input type="text" class="form-control" id="inputEmail" placeholder="Email" />
@@ -90,15 +90,13 @@
                                                 </div>
                                             </div>
                                             <button type="submit" class="btn btn-sm btn-outline-info ml-1">Register</button>
-
-                                            <h6 class="font-weight-light">
-                                                <a href="#"> Already registered? Log In </a>
-                                            </h6>
                                         </form>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-sm btn-outline-info ml-1" data-dismiss="modal">Edit</button>
+                                    <h6 class="font-weight-light">Already registered?
+                                        <button type="submit" class="btn btn-sm btn-outline-info ml-1">Login</button>
+                                    </h6>
                                     <button type="button" class="btn btn-sm btn-outline-info ml-1">Save</button>
                                 </div>
                             </div>
@@ -120,19 +118,18 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form id="login" action="login.php" id="login_form" method="post" onsubmit="return loginForm()">
-                                        <input id="emailfield" type="text" value="name@gmail.com" autocomplete=" username" class="form-control" placeholder="Username" />
+                                    <form id="loginform" action="login.php" method="post" onsubmit="return loginForm()">
+                                        <input id="emailfield" type="text" value="name@gmail.com" autocomplete="username" class="form-control" placeholder="Username" />
                                         <div id="email_error" class="invalid-feedback"></div>
-                                        <input type="password" autocomplete="current-password" class="form-control" id="inputPassword" placeholder="Password" />
+                                        <input id="inputPassword" type="password" autocomplete="current-password" class="form-control" placeholder="Password" />
                                         <div id="password_error" class="invalid-feedback "></div>
                                         <button type="submit" class="btn btn-sm btn-outline-info ml-1" value="login">Login</button>
-                                        <h6 class="font-weight-light">
-                                            <a href="#"> New? Sign up </a>
-                                        </h6>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-sm btn-outline-info ml-1" data-dismiss="modal">Edit</button>
+                                    <h6 class="font-weight-light"></h6> New?
+                                    <button type="submit" class="btn btn-sm btn-outline-info ml-1">Register</button>
+                                    </h6>
                                     <button type="button" class="btn btn-sm btn-outline-info ml-1">Save</button>
                                 </div>
                             </div>
@@ -157,7 +154,6 @@
                                 </div>
                                 <div class="modal-body ">...</div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-sm btn-outline-info ml-1" data-dismiss="modal">Edit</button>
                                     <button type="button" class="btn btn-sm btn-outline-info ml-1">Save</button>
                                 </div>
                             </div>

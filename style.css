@@ -144,9 +144,16 @@ textarea {
 }
 
 
-/*button cart*/
+/*form login, signup*/
 
-.card-button {
+#emailfield {
+    display: none;
+}
+
+
+/*button login, signin*/
+
+.btn.btn-sm {
     color: #23286b;
     background-color: #fffbdf;
     border-style: 1px solid #23286b;
@@ -154,9 +161,9 @@ textarea {
 }
 
 
-/*button login, signin*/
+/*button cart*/
 
-.btn.btn-sm {
+.card-button {
     color: #23286b;
     background-color: #fffbdf;
     border-style: 1px solid #23286b;
