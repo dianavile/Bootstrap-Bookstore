@@ -1,11 +1,11 @@
 /* jshint esversion:6*/
 
-const form = document.getElementById('search.form');
+const searchForm = document.getElementById('search.form');
 
 function registerValidate() {
 	let acumErrores = 0;
 	
-	form.classList.remove('is-invalid');
+	searchForm.classList.remove('is-invalid');
 	
 	const inputSearch = document.getElementById('inputSearch');	
 	
@@ -22,7 +22,7 @@ function registerValidate() {
 	}
 }
 
-form.addEventListener('blur', (event) => {
+searchForm.addEventListener('blur', (event) => {
 	console.log(event);
 	if(event.target.value!='') event.target.classList.remove('is-invalid');
 }, true);

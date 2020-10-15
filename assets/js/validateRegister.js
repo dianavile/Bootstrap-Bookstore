@@ -1,11 +1,11 @@
 /* jshint esversion:6*/
 
-const form = document.getElementById('register.form');
+const registerForm = document.getElementById('register.form');
 
 function registerValidate() {
 	let acumErrores = 0;
 	
-	form.classList.remove('is-invalid');
+	registerForm.classList.remove('is-invalid');
 	
 	const inputEmail = document.getElementById('inputEmail');	
 	const inputPassword = document.forms["register.form"]["input.Password"];
@@ -68,7 +68,7 @@ function registerValidate() {
 	}
 }
 
-form.addEventListener('blur', (event) => {
+registerForm.addEventListener('blur', (event) => {
 	console.log(event);
 	if(event.target.value!='') event.target.classList.remove('is-invalid');
 }, true);

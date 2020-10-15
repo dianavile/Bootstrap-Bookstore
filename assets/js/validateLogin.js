@@ -1,11 +1,11 @@
 /* jshint esversion:6*/
 
-const form = document.getElementById('login.form');
+const loginForm = document.getElementById('login.form');
 
 function loginValidate() {
 	let acumErrores = 0;
 	
-	form.classList.remove('is-invalid');
+	loginForm.classList.remove('is-invalid');
 	
 	const inputEmail = document.getElementById('inputEmail');	
 	const inputPassword = document.forms["login.form"]["input.Password"];
@@ -34,7 +34,7 @@ function loginValidate() {
 	}
 }
 
-form.addEventListener('blur', (event) => {
+loginForm.addEventListener('blur', (event) => {
 	console.log(event);
 	if(event.target.value!='') event.target.classList.remove('is-invalid');
 }, true);
