@@ -46,94 +46,122 @@
                     <input id="search" type="text" class="form-control form-control-sm" placeholder="Search a book" aria-label="Search book" aria-describedby="basic-addon2" />
                     <div class="input-group-append">
                         <button class="search-button btn btn-sm btn-outline-info" onclick="inSearchValid()" type="button">
-                <img
-                  src="assets/icons/magnifier.svg"
-                  alt="magnifier search-icon"
-                />
-              </button>
+                            <img src="assets/icons/magnifier.svg" alt="magnifier search-icon"/>
+                        </button>
                     </div>
                 </form>
-                <!-- LOGIN-REGISTRARSECTION TODO: add JS functionality  -->
-                <div class="col-xs-4 col-sm-4 col-md-4 col-xl-3 d-flex justify-content-end align-items-center align-content-center">
-                    <!--CART TODO: add JS functionality-->
-                    <ion-icon id="card" name="cart-outline">
-                        <button type="button" onclick="location.href='assets/html/cart.html'" class="btn btn-sm btn-outline-info ml-1"> Cart <span>0</span>
-                        <img
-                          src="assets/icons/shopping-cart.svg "
-                          alt="shopping-cart "
-                        />
-                      </button></ion-icon>
-                    <button type="button " onclick="location.href='assets/html/login.html'" class="btn btn-sm btn-outline-info ml-1 ">Log In</button>
-                    <button type="button " onclick="location.href='assets/html/registration_form.html'" class="btn btn-sm btn-outline-info ml-1 ">Register</button>
-                </div>
-            </div>
-            <!-- DRAFT VERSION See: https://getbootstrap.com/docs/4.1/components/modal/#live-demo-->
-            <!--TODO: Add Modal card -->
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Card</button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Card</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--TODO: Add Modal card, login, register -->
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Login</button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!--TODO: Add  register -->
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Register</button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Register</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+                <!--TODO: CARD; LOGIN, REGISTER add JS functionality-->
+                <div class="col-xs-4 col-sm-4 col-md-4 col-xl-3 d-flex justify-content-end align-items-center align-content-center">
+                    <!-- CARD Button trigger modal -->
+                    <button type="button" class="btn btn-sm btn-outline-info ml-1" data-toggle="modal" data-target="#cardModal">
+                        <img src="assets/icons/shopping-cart.svg "alt="shopping-cart"/>
+                    </button>
+                    <!-- CARD Modal -->
+                    <div class="modal fade container-fluid" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="cardModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="logo" role="primary" aria-label="logo">
+                                        <h2 class="modal-title" id="exampleModalLabel">Bookstore Card</h2>
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true ">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body ">...</div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            ...
+                    </div>
+
+                    <!-- LOGIN Button trigger modal -->
+                    <button type="button" class="btn btn-sm btn-outline-info ml-1" data-toggle="modal" data-target="#loginModal">Login</button>
+                    <!-- Login Modal -->
+                    <div class="modal fade container-fluid" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true ">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="logo" role="primary" aria-label="logo">
+                                        <h2 class="modal-title" id="loginModalLabel">Bookstore Login</h2>
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true ">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="login" action="login.php" id="login_form" onsubmit="return loginForm() " method="post " class="needs-validation">
+                                        <input type="text" class="form-control" id="inputUsername" placeholder="Username" autocomplete="username" />
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" autocomplete="current-password" />
+                                        <div id="password_error" class="invalid-feedback"></div>
+                                        <input type="text" class="form-control" id="inputEmail" placeholder="Email" />
+                                        <div id="email_error" class="invalid-feedback"></div>
+                                        <button type="submit" class="btn btn-primary" value="login">Login</button>
+                                        <h6 class="font-weight-light">
+                                            <a href="#"> New around here? Sign up </a>
+                                        </h6>
+                                    </form>
+                                </div>
+                                <div class="modal-footer ">
+                                    <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                                    <button type="button " class="btn btn-primary ">Save changes</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+
+                    <!-- REGISTER Button trigger modal -->
+                    <button type="button" class="btn btn-sm btn-outline-info ml-1" data-toggle="modal" data-target="#registerModal"> Register</button>
+                    <!--Register Modal -->
+                    <div class="modal fade container" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="logo" role="primary" aria-label="logo">
+                                        <h2 class="modal-title" id="registerModalLabel">Register to Bookstore</h2>
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <form name="register" action="form.html" id="register_form" onsubmit="return registerForm()" method="POST" autocomplete="on" class="needs-validation" validate>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputEmail">Email</label>
+                                                    <input type="text" class="form-control" id="inputEmail" placeholder="Email" />
+                                                    <div id="email_error" class="invalid-feedback"></div>
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPassword">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" />
+                                                    <div id="password_error" class="invalid-feedback"></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck" />
+                                                    <label class="form-check-label" for="gridCheck">I accept the <a href="/assets/html/terms-conditions.html">terms and conditions.</a></label>
+                                                    <div id="grid_error" class="invalid-feedback"></div>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn">Register</button>
+                                            <h6 class="font-weight-light">
+                                                <a href="#"> Already registered? Log In </a>
+                                            </h6>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,13 +174,13 @@
             <section id="navbarSupportedContent " class="categories ">
                 <ul id="categories " class="li navbar-nav p-2 ">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#bestsellers">Bestsellers |</a>
+                        <a class="nav-link " href="#bestsellers ">Bestsellers |</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="#readers">Readers |</a>
+                        <a class="nav-link " href="#readers ">Readers |</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#promotion">Promotion</a>
+                        <a class="nav-link " href="#promotion ">Promotion</a>
                     </li>
                 </ul>
             </section>
@@ -165,13 +193,13 @@
                 <div class="hero-card ">
                     <h1 class="hero-title ">
                         Books to read in 2020
-                        <button class="hero-button btn btn-large btn-outline-info ml-1" href="#">Read</button>
+                        <button class="hero-button btn btn-large btn-outline-info ml-1 " href="# ">Read</button>
                     </h1>
                 </div>
             </section>
 
             <!--BESTSELLERS-->
-            <section id="bestsellers" class="bestsellers row mx-0 ">
+            <section id="bestsellers " class="bestsellers row mx-0 ">
                 <article class="col-sm-12 mb-4 mt-2 ">
                     <h3 class="text-center ">Bestsellers</h3>
                 </article>
@@ -182,9 +210,9 @@
                             <div class="card-deck ">
                                 <div class="card card-1 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid" src="assets/img/cards/CleanCode.jpg" alt="Bookcover" />
+                                        <img class="card-img-top img-fluid " src="assets/img/cards/CleanCode.jpg " alt="Bookcover " />
                                     </a>
-                                    <hr class="solid">
+                                    <hr class="solid ">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 ">
                                             Clean Code
@@ -192,7 +220,7 @@
                                         <h6 class="card-subtitle mb-2 text-muted ">
                                             Robert C. Martin
                                         </h6>
-                                        <hr class="solid">
+                                        <hr class="solid ">
                                         <p class="card-text ">40.55&euro;
                                             <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
                                             <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
@@ -202,12 +230,12 @@
                                 </div>
                                 <div class="card card-2 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid" src="assets/img/cards/FrontendArchitecture.jpg" alt="Bookcover" />
+                                        <img class="card-img-top img-fluid " src="assets/img/cards/FrontendArchitecture.jpg " alt="Bookcover " />
                                     </a>
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 "> Frontend Architecture </h6>
                                         <h6 class="card-subtitle mb-2 text-muted "> Micah Godbolt</h6>
-                                        <hr class="solid">
+                                        <hr class="solid ">
                                         <p class="card-text ">27.21&euro;
                                             <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
                                             <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
@@ -217,13 +245,13 @@
                                 </div>
                                 <div class="card card-3 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid" src="assets/img/cards/ResponsiveWeb.jpg" alt="Bookcover" />
+                                        <img class="card-img-top img-fluid " src="assets/img/cards/ResponsiveWeb.jpg " alt="Bookcover " />
                                     </a>
-                                    <hr class="solid">
+                                    <hr class="solid ">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 "> Responsive Web Design </h6>
                                         <h6 class="card-subtitle mb-2 text-muted "> Ben Frain</h6>
-                                        <hr class="solid">
+                                        <hr class="solid ">
                                         <p class="card-text ">39.99&euro;
                                             <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
                                             <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
@@ -233,15 +261,15 @@
                                 </div>
                                 <div class="card card-4 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid" src="assets/img/cards/JavaScript.jpg" alt="Bookcover" />
+                                        <img class="card-img-top img-fluid " src="assets/img/cards/JavaScript.jpg " alt="Bookcover " />
                                     </a>
-                                    <hr class="solid">
+                                    <hr class="solid ">
                                     <h6 class="card-title text-truncate px-1 "> JavaScript: The Definitive Guide </h6>
                                     <h6 class="card-subtitle mb-2 text-muted "> David Flanagan</h6>
-                                    <hr class="solid">
+                                    <hr class="solid ">
                                     <div class="card-body py-1 px-0 ">
-                                        <p class="card-text">43.45&euro;
-                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                        <p class="card-text ">43.45&euro;
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
                                             <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
                                         </button>
                                         </p>
@@ -254,7 +282,7 @@
             </section>
 
             <!--READERS-->
-            <section id="readers" class="readers row mx-0 ">
+            <section id="readers " class="readers row mx-0 ">
                 <article class="col-sm-12 mb-4 mt-2 ">
                     <h3 class="text-center ">Readers</h3>
                 </article>
@@ -265,15 +293,15 @@
                             <div class="card-deck ">
                                 <div class="card card-1 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid" src="assets/img/cards/DontMakeMeThink.jpg " alt="Bookcover " />
+                                        <img class="card-img-top img-fluid " src="assets/img/cards/DontMakeMeThink.jpg " alt="Bookcover " />
                                     </a>
-                                    <hr class="solid">
+                                    <hr class="solid ">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 "> Don´t make me think </h6>
                                         <h6 class="card-subtitle mb-2 text-muted "> Steve Krug</h6>
-                                        <hr class="solid">
-                                        <p class="card-text">16.20&euro;
-                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                        <hr class="solid ">
+                                        <p class="card-text ">16.20&euro;
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
                                             <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
                                         </button>
                                         </p>
@@ -281,15 +309,15 @@
                                 </div>
                                 <div class="card card-2 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid" src="assets/img/cards/RoadToReact.jpg" alt="Bookcover" />
+                                        <img class="card-img-top img-fluid " src="assets/img/cards/RoadToReact.jpg " alt="Bookcover " />
                                     </a>
-                                    <hr class="solid">
+                                    <hr class="solid ">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 "> The Road To React </h6>
                                         <h6 class="card-subtitle mb-2 text-muted "> Robin Wieruch</h6>
-                                        <hr class="solid">
-                                        <p class="card-text">27,65&euro;
-                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                        <hr class="solid ">
+                                        <p class="card-text ">27,65&euro;
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
                                             <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
                                         </button>
                                         </p>
@@ -297,15 +325,15 @@
                                 </div>
                                 <div class="card card-3 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid" src="assets/img/cards/WebDevelopmentNodeExpress.jpg" alt="Bookcover" />
+                                        <img class="card-img-top img-fluid " src="assets/img/cards/WebDevelopmentNodeExpress.jpg " alt="Bookcover " />
                                     </a>
-                                    <hr class="solid">
+                                    <hr class="solid ">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 "> Web Development </h6>
                                         <h6 class="card-subtitle mb-2 text-muted "> Ethan Brown</h6>
-                                        <hr class="solid">
-                                        <p class="card-text">32.99&euro;
-                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                        <hr class="solid ">
+                                        <p class="card-text ">32.99&euro;
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
                                             <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
                                         </button>
                                         </p>
@@ -313,13 +341,13 @@
                                 </div>
                                 <div class="card card-4 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid" src="assets/img/cards/Web DevelopmentDesignHTML5.jpg" alt="Bookcover " />
+                                        <img class="card-img-top img-fluid " src="assets/img/cards/Web DevelopmentDesignHTML5.jpg " alt="Bookcover " />
                                     </a>
-                                    <hr class="solid">
+                                    <hr class="solid ">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 "> Web Development & Design</h6>
                                         <h6 class="card-subtitle mb-2 text-muted "> Terry Felke Morris</h6>
-                                        <hr class="solid">
+                                        <hr class="solid ">
                                         <p class="card-text ">35.36&euro;
                                             <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
                                             <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
@@ -334,7 +362,7 @@
             </section>
 
             <!--PROMOTION-->
-            <section id="promotion" class="promotion row d-flex mx-0 ">
+            <section id="promotion " class="promotion row d-flex mx-0 ">
                 <div class="col-sm-12 mb-4 mt-2 ">
                     <h4 class="text-center ">Promotion</h4>
                 </div>
@@ -345,15 +373,15 @@
                             <div class="card-deck ">
                                 <div class="card card-1 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid" src="assets/img/cards/HTMLCSS.jpg " alt="Bookcover " />
+                                        <img class="card-img-top img-fluid " src="assets/img/cards/HTMLCSS.jpg " alt="Bookcover " />
                                     </a>
-                                    <hr class="solid">
+                                    <hr class="solid ">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 "> HTML & CSS</h6>
                                         <h6 class="card-subtitle mb-2 text-muted "> Jon Duckett</h6>
-                                        <hr class="solid">
+                                        <hr class="solid ">
                                         <p class="card-text ">21&euro;
-                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
                                             <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
                                         </button>
                                         </p>
@@ -361,15 +389,15 @@
                                 </div>
                                 <div class="card card-2 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid" src="assets/img/cards/SVGAnimations.jpg " alt="Bookcover " />
+                                        <img class="card-img-top img-fluid " src="assets/img/cards/SVGAnimations.jpg " alt="Bookcover " />
                                     </a>
-                                    <hr class="solid">
+                                    <hr class="solid ">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 "> SVG Animations</h6>
                                         <h6 class="card-subtitle mb-2 text-muted "> Sarah Drasner</h6>
-                                        <hr class="solid">
+                                        <hr class="solid ">
                                         <p class="card-text ">27,66&euro;
-                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
                                             <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
                                         </button>
                                         </p>
@@ -377,15 +405,15 @@
                                 </div>
                                 <div class="card card-3 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid" src="assets/img/cards/TheCompleteWebsitePlanningGuide.jpg " alt="Bookcover " />
+                                        <img class="card-img-top img-fluid " src="assets/img/cards/TheCompleteWebsitePlanningGuide.jpg " alt="Bookcover " />
                                     </a>
-                                    <hr class="solid">
+                                    <hr class="solid ">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 "> The Complete Website Planning</h6>
                                         <h6 class="card-subtitle mb-2 text-muted "> Darryl King</h6>
-                                        <hr class="solid">
+                                        <hr class="solid ">
                                         <p class="card-text ">21.99&euro;
-                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
                                             <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
                                         </button>
                                         </p>
@@ -393,15 +421,15 @@
                                 </div>
                                 <div class="card card-4 d-none d-sm-block text-center ">
                                     <a href="# " class="stretched-link ">
-                                        <img class="card-img-top img-fluid" src="assets/img/cards/TheDesignWebApis.jpg " alt="Bookcover " />
+                                        <img class="card-img-top img-fluid " src="assets/img/cards/TheDesignWebApis.jpg " alt="Bookcover " />
                                     </a>
-                                    <hr class="solid">
+                                    <hr class="solid ">
                                     <div class="card-body py-1 px-0 ">
                                         <h6 class="card-title text-truncate px-1 ">The Design of Web Apis</h6>
                                         <h6 class="card-subtitle mb-2 text-muted "> Arnaud Lauret</h6>
-                                        <hr class="solid">
+                                        <hr class="solid ">
                                         <p class="card-text ">44.99&euro;
-                                            <button type="button" class="btn btn-sm btn-outline-info ml-1 ">
+                                            <button type="button " class="btn btn-sm btn-outline-info ml-1 ">
                                             <img src="assets/icons/shopping-cart.svg " alt="shopping-cart "/>
                                         </button>
                                         </p>
@@ -420,20 +448,20 @@
                     <h3 class="title text-center mb-4 ">
                         Subscribe to Bookstore Newsletter
                     </h3>
-                    <form name="subscribe" action=" " id="subscribe_form " onsubmit="return subscribeForm() " method="POST" autocomplete="on" class="needs-validation" novalidate>
+                    <form name="subscribe " action=" " id="subscribe_form " onsubmit="return subscribeForm() " method="POST " autocomplete="on " class="needs-validation " novalidate>
                         <div class="form-row d-flex justify-content-center mb-4 ">
                             <div class="col-sm-2 ">
-                                <input type="text " id="inputName" class="form-control form-control-sm" placeholder="Name" required />
-                                <div id="name_error" class="invalid-feedback"></div>
+                                <input type="text " id="inputName " class="form-control form-control-sm " placeholder="Name " required />
+                                <div id="name_error " class="invalid-feedback "></div>
                             </div>
-                            <div class="col-sm-2">
-                                <input type="text" id="inputEmail" class="form-control form-control-sm" placeholder="Email" required />
-                                <div id="email_error" class="invalid-feedback"></div>
+                            <div class="col-sm-2 ">
+                                <input type="text " id="inputEmail " class="form-control form-control-sm " placeholder="Email " required />
+                                <div id="email_error " class="invalid-feedback "></div>
                             </div>
-                            <div class="col-sm-1">
-                                <button type="submit" onclick="messageValidate()" class="btn align-items-center btn-sm btn-primary mr-0 "> 
+                            <div class="col-sm-1 ">
+                                <button type="submit " onclick="messageValidate() " class="btn align-items-center btn-sm btn-primary mr-0 "> 
                                     <a href="mailto:bookstore@gmail.com?subject=""> Subscribe </a>
-                        </button>
+                    </button>
                             </div>
                         </div>
                     </form>
@@ -442,9 +470,9 @@
         </main>
 
         <!--FOOTER-->
-        <footer id="footer " class="flex-container pt-3 mb-0 pb-0 ">
-            <div id="social ">
-                <h5 class="title ">Follow us on:</h5>
+        <footer id="footer" class="flex-container pt-3 mb-0 pb-0">
+            <div id="social">
+                <h5 class="title ">Follow us on </h5>
                 <ul>
                     <li>
                         <a href="https://www.instagram.com/accounts/login/ ">
@@ -483,7 +511,5 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
 </body>
-
-</html>
 
 </html>
