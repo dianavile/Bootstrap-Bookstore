@@ -21,7 +21,7 @@ function registerValidate() {
         acumErrores ++;
     }else if(!validar_email(inputEmail.value)){
 		inputEmail.classList.add("is-invalid");
-		document.getElementById("errorEmail").textContent = "The email does not contain the correct format";
+		document.getElementById("errorEmail").textContent = "This email does not contain the correct format";
 		acumErrores ++;
 	}
 
@@ -51,7 +51,7 @@ function registerValidate() {
 	
 	if(inputZip.value == "" || inputZip.length!=5) {
 		inputZip.classList.add("is-invalid");
-		document.getElementById("errorZip").textContent = "The postalcode does not meet requirements.";
+		document.getElementById("errorZip").textContent = "The zipcode does not meet requirements.";
 		acumErrores ++;
 	}
 	
@@ -73,7 +73,8 @@ form.addEventListener('blur', (event) => {
 	if(event.target.value!='') event.target.classList.remove('is-invalid');
 }, true);
 
+//REGEX function to validate correct email address
 function validar_email(email) {
-	var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	let regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 	return regex.test(email) ? true : false;
 }
