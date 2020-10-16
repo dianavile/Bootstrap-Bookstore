@@ -42,8 +42,8 @@
                     </div>
                 </div>
                 <!-- SEARCH TODO: add JS functionality -->
-                <form method="POST" id="searchform" class="col-xs-4 col-sm-4 col-md-5 col-xl-6 input-group my-3" action="form.php" onsubmit="return searchValidate()" autocomplete="on" role="primary" aria-label="search">
-                    <input id="searchbar" type="text" class="form-control form-control-sm" placeholder="Search a book" aria-label="Search book" aria-describedby="basic-addon2" />
+                <form action="/action_page.php" method="post" id="searchform" class="col-xs-4 col-sm-4 col-md-5 col-xl-6 input-group my-3" onsubmit="return searchValidate()" autocomplete="on" role="primary" aria-label="search">
+                    <input id="searchbar" type="text" class="form-control form-control-sm" placeholder="Search a book" aria-label="Search book" aria-describedby="basic-addon2" required/>
                     <div class="input-group-append">
                         <button class="search-button btn btn-sm btn-outline-info" onclick="inSearchValid()" type="button">
                             <img src="assets/icons/magnifier.svg" alt="magnifier search-icon"/>
@@ -69,32 +69,32 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="container">
-                                        <form method="POST" id="registerform" name="registerForm" action="form.php" onsubmit="return registerValidate()" autocomplete="on">
+                                        <form action="/action_page.php" method="post" id="registerform" name="registerForm" onsubmit="return registerValidate()" autocomplete="on">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label for="inputEmail">Email</label>
-                                                    <input id="inputEmail" class="form-control" type="text" placeholder="Email">
+                                                    <input id="inputEmail" class="form-control" type="text" placeholder="email" required>
                                                     <div id="email_error" class="invalid-feedback"></div>
                                                 </div>
                                                 <div class="w-100"></div>
                                                 <div class="form-group col-md-6">
                                                     <label for="inputPassword">Password</label>
-                                                    <input id="inputPassword" type="password" class="form-control" placeholder="Password">
+                                                    <input id="inputPassword" type="password" class="form-control" placeholder="Password" required>
                                                     <div id="password_error" class="invalid-feedback"></div>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label for="inputPassword">Repeat Password</label>
-                                                    <input id="currentPassword" type="currentPassword" class="form-control" placeholder="Password">
+                                                    <input id="currentPassword" type="currentPassword" class="form-control" placeholder="Password" required>
                                                     <div id="password_error" class="invalid-feedback"></div>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label for="inputAddress">Address</label>
-                                                <input id="inputAddress" type="text" class="form-control">
+                                                <input id="inputAddress" type="text" class="form-control" required>
                                                 <div id="address_error" class="invalid-feedback"></div>
                                                 <div class="form-group col-md-5">
                                                     <label for="inputProvince">Province</label>
-                                                    <select id="inputProvince" class="form-control">
+                                                    <select id="inputProvince" class="form-control" required>
                                                         <option selected value=""></option>
                                                         <option>Madrid</option>
                                                         <option>Barcelona</option>
@@ -106,23 +106,23 @@
                                                 </div>
                                                 <div class="form-group col-md-5">
                                                     <label for="inputCity">City</label>
-                                                    <input id="inputCity" type="text" class="form-control">
+                                                    <input id="inputCity" type="text" class="form-control" required>
                                                     <div id="errorCity" class="invalid-feedback"></div>
                                                 </div>
                                                 <div class="form-group col-md-2">
                                                     <label for="inputZip">ZipCode</label>
-                                                    <input id="inputZip" type="text" class="form-control">
+                                                    <input id="inputZip" type="text" class="form-control" required>
                                                     <div id="errorZip" class="invalid-feedback"></div>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <div class="form-check">
-                                                    <input id="gridCheck" type="checkbox" class="form-check-input" />
+                                                    <input id="gridCheck" type="checkbox" class="form-check-input" required/>
                                                     <label class="form-check-label" for="gridCheck">I accept the <a href="/assets/html/terms-conditions.html">terms and conditions.</a></label>
                                                     <div id="grid_error" class="invalid-feedback"></div>
                                                 </div>
                                             </div>
-                                            <button type="submit" class="btn btn-sm btn-outline-info ml-1">Register</button>
+                                            <button type="submit" value="Submit" class="btn btn-sm btn-outline-info ml-1">Register</button>
                                         </form>
                                     </div>
                                 </div>
@@ -151,17 +151,18 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form method="POST" id="loginform" name="loginForm" action="login.php" method="post" onsubmit="return loginValidate()" autocomplete="on">
+
+                                    <form action="/action_page.php" method="post" id="loginform" name="loginForm" onsubmit="return loginValidate()" autocomplete="on">
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
                                                 <label for="inputEmail">Email</label>
-                                                <input id="inputEmail" class="form-control" type="text" value="name@gmail.com" placeholder="Email">
+                                                <input id="inputEmail" class="form-control" type="text" value="name@gmail.com" placeholder="Email" required>
                                                 <div id="email_error" class="invalid-feedback"></div>
                                             </div>
                                             <div class="w-100"></div>
                                             <div class="form-group col-md-6">
                                                 <label for="inputPassword">Password</label>
-                                                <input id="inputPassword" type="password" class="form-control" autocomplete="current-password" placeholder="Password">
+                                                <input id="inputPassword" type="password" class="form-control" autocomplete="current-password" placeholder="Password" required>
                                                 <div id="password_error" class="invalid-feedback"></div>
                                             </div>
                                         </div>

@@ -2,7 +2,7 @@
 
 const searchForm = document.getElementById('search.form');
 
-function registerValidate() {
+function inSearchValid() {
 	let acumErrores = 0;
 	
 	searchForm.classList.remove('is-invalid');
