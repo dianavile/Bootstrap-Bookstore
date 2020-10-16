@@ -7,22 +7,22 @@ function loginValidate() {
 	
 	loginForm.classList.remove('is-invalid');
 	
-	const inputEmail = document.getElementById('inputEmail');	
-	const inputPassword = document.forms["login.form"]["input.Password"];
+	const username = document.getElementById('username');	
+	const currentPassword = document.forms["login.form"]["input.Password"];
 
 
-	if(inputEmail.value == "") {
-		inputEmail.classList.add("is-invalid");
+	if(username.value == "") {
+		username.classList.add("is-invalid");
 		document.getElementById("errorEmail").textContent = "This field is required";
         acumErrores ++;
-    }else if(!validar_email(inputEmail.value)){
-		inputEmail.classList.add("is-invalid");
+    }else if(!validar_email(username.value)){
+		username.classList.add("is-invalid");
 		document.getElementById("errorEmail").textContent = "This email does not contain the correct format";
 		acumErrores ++;
 	}
 
-    if(inputPassword.value == "") {
-		inputPassword.classList.add("is-invalid");
+    if(currentPassword.value == "") {
+		currentPassword.classList.add("is-invalid");
 		document.getElementById("errorPassword").textContent = "This field is required";
 		acumErrores ++;
 	}

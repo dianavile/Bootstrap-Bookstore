@@ -72,8 +72,8 @@
                                         <form action="/action_page.php" method="post" id="registerform" name="registerForm" onsubmit="return registerValidate()" autocomplete="on">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail">Email</label>
-                                                    <input id="inputEmail" class="form-control" type="text" placeholder="email" required>
+                                                    <label for="username">Email</label>
+                                                    <input id="username" class="form-control" type="text" placeholder="email" required>
                                                     <div id="email_error" class="invalid-feedback"></div>
                                                 </div>
                                                 <div class="w-100"></div>
@@ -155,14 +155,14 @@
                                     <form action="/action_page.php" method="post" id="loginform" name="loginForm" onsubmit="return loginValidate()" autocomplete="on">
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
-                                                <label for="inputEmail">Email</label>
-                                                <input id="inputEmail" class="form-control" type="text" value="name@gmail.com" placeholder="Email" required>
+                                                <label for="username">Email</label>
+                                                <input id="username" class="form-control" type="text" value="name@gmail.com" placeholder="Email" required>
                                                 <div id="email_error" class="invalid-feedback"></div>
                                             </div>
                                             <div class="w-100"></div>
                                             <div class="form-group col-md-6">
-                                                <label for="inputPassword">Password</label>
-                                                <input id="inputPassword" type="password" class="form-control" autocomplete="current-password" placeholder="Password" required>
+                                                <label for="current-password">Password</label>
+                                                <input id="current-password" type="password" class="form-control" autocomplete="current-password" placeholder="Password" required>
                                                 <div id="password_error" class="invalid-feedback"></div>
                                             </div>
                                         </div>
@@ -459,23 +459,23 @@
 
             <!--NEWSLETTER-->
             <section id="newsletter" class="row d-flex mx-0">
-                <div class="col-sm-12 justify-content-center ">
-                    <h3 class="title text-center mb-4 ">
+                <div class="col-sm-12 justify-content-center">
+                    <h3 class="title text-center mb-4">
                         Subscribe to Bookstore Newsletter
                     </h3>
-                    <form name="subscribe " action=" " id="subscribe_form " onsubmit="return subscribeForm() " method="POST " autocomplete="on " class="needs-validation " novalidate>
-                        <div class="form-row d-flex justify-content-center mb-4 ">
-                            <div class="col-sm-2 ">
-                                <input type="text " id="inputName " class="form-control form-control-sm " placeholder="Name " required />
-                                <div id="name_error " class="invalid-feedback "></div>
+                    <form action="/action_page.php" method="post" name="subscribe" id="subscribe_form" onsubmit="return subscribeForm()" autocomplete="on" class="needs-validation" novalidate>
+                        <div class="form-row d-flex justify-content-center mb-4">
+                            <div class="col-sm-2">
+                                <input type="text" id="inputName" class="form-control form-control-sm" placeholder="Name" required />
+                                <div id="name_error" class="invalid-feedback"></div>
                             </div>
-                            <div class="col-sm-2 ">
-                                <input type="text " id="inputEmail " class="form-control form-control-sm " placeholder="Email " required />
-                                <div id="email_error " class="invalid-feedback "></div>
+                            <div class="col-sm-2">
+                                <input type="text" id="username" class="form-control form-control-sm" placeholder="Email" required />
+                                <div id="email_error" class="invalid-feedback"></div>
                             </div>
-                            <div class="col-sm-1 ">
-                                <button type="submit " onclick="messageValidate() " class="btn align-items-center btn-sm btn-primary mr-0 "> 
-                                    <a href="mailto:bookstore@gmail.com?subject=""> Subscribe </a>
+                            <div class="col-sm-1">
+                                <button type="submit" onclick="messageValidate()" class="btn align-items-center btn-sm btn-primary mr-0"> 
+                                    <a href="mailto:bookstore@gmail.com?subject="> Subscribe </a>
                                         </button>
                             </div>
                         </div>
