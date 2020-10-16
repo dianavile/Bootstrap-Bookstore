@@ -11,7 +11,7 @@ body {
     overflow-x: hidden;
     max-width: 90%;
     display: flex;
-    background-color: #89b3f4;
+    background-color: #e3e0eb;
 }
 
 h1,
@@ -19,7 +19,6 @@ h2,
 h3,
 h4 {
     padding-top: 1%;
-    color: #23286b;
     margin-top: 0;
     margin-bottom: 0.1rem;
     font-weight: 400;
@@ -44,6 +43,6 @@ hr.solid {
     border-top: 2px solid #23286b;
 }
 
-#privacy {
+#terms {
     text-align: left;
 }
