@@ -9,7 +9,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-    background-color: #e3e0eb;
+    background-color: #fffbdf;
     padding-left: 1%;
 }
 
@@ -43,6 +43,6 @@ hr.solid {
     border-top: 2px solid #23286b;
 }
 
-#privacy {
+#legal {
     text-align: left;
 }

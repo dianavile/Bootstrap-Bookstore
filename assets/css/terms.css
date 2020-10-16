@@ -9,9 +9,8 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-    max-width: 90%;
-    display: flex;
-    background-color: #e3e0eb;
+    background-color: #f9eadf;
+    padding-left: 1%;
 }
 
 h1,
