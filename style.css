@@ -144,6 +144,16 @@ textarea {
 }
 
 
+/*modal*/
+
+#registerModal,
+#loginModal,
+#cardModal {
+    color: #23286b;
+    background-color: #f9eadf;
+}
+
+
 /*form login, signup*/
 
 #emailfield {
