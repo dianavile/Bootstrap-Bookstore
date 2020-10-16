@@ -1,46 +1,60 @@
 /* jshint esversion:6*/
 
-const loginForm = document.getElementById('login.form');
-
-function loginValidate() {
-	let acumErrores = 0;
+//declare variables
+const loginform = document.getElementById('login.form');
+const Email2 = document.getElementById('Email2');
+	const Password2 = document.getElementById('Password2');
 	
-	loginForm.classList.remove('is-invalid');
+//add Event on submit
+loginform.addEventListener('submit', e => {
+	e.preventDefault();
 	
-	const username = document.getElementById('username');	
-	const currentPassword = document.forms["login.form"]["input.Password"];
+	checkInputs();
+});
 
-
-	if(username.value == "") {
-		username.classList.add("is-invalid");
-		document.getElementById("errorEmail").textContent = "This field is required";
-        acumErrores ++;
-    }else if(!validar_email(username.value)){
-		username.classList.add("is-invalid");
-		document.getElementById("errorEmail").textContent = "This email does not contain the correct format";
-		acumErrores ++;
+//check inputs
+function checkInputs() {
+	// trim to remove the whitespaces
+	const emailValue = email.value.trim();
+	const password2Value = password2.value.trim();
+	
+	//conditionals
+	if(emailValue === '') {
+		setErrorFor(email, 'Email cannot be blank');
+	} else if (!isEmail(emailValue)) {
+		setErrorFor(email, 'Not a valid email');
+	} else {
+		setSuccessFor(email);
 	}
-
-    if(currentPassword.value == "") {
-		currentPassword.classList.add("is-invalid");
-		document.getElementById("errorPassword").textContent = "This field is required";
-		acumErrores ++;
-	}
 	
-    if (acumErrores > 0){
-        return false;
-    } else{
-		return true;
+	if(password2Value === '') {
+		setErrorFor(password2, 'Password2 cannot be blank');
+	} else if(passwordValue !== password2Value) {
+		setErrorFor(password2, 'Passwords does not match');
+	} else{
+		setSuccessFor(password2);
 	}
 }
 
-loginForm.addEventListener('blur', (event) => {
-	console.log(event);
-	if(event.target.value!='') event.target.classList.remove('is-invalid');
-}, true);
+//functions
+function setErrorFor(input, message) {
+	const formControl = input.parentElement;
+	const small = formControl.querySelector('small');
+	formControl.className = 'form-control error';
+	small.innerText = message;
+}
 
+function setSuccessFor(input) {
+	const formControl = input.parentElement;
+	formControl.className = 'form-control success';
+}
+
+//validar_email
 //REGEX function to validate correct email address
-function validar_email(email) {
+function isEmail(email) {
 	let regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 	return regex.test(email) ? true : false;
 }
+
+//loginValidation();
+
