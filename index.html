@@ -11,7 +11,7 @@
     <title>Bootstrap-Bookstore | E-commerce Landingpage</title>
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- icons-->
-    <link src="https://cdn.ic onmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" />
+    <link src="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" />
     <link href="assets/icons/book.svg" rel="icon" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
@@ -22,7 +22,8 @@
 
 <body>
     <!-- CONTAINER -->
-    <div class="container-fluid bg-light">
+    <section class="container-fluid bg-light">
+
         <!-- HEADER -->
         <header id="header" class="header-menu bg-light">
             <div class="navbar-top" role="complementary" aria-label="benefits">
@@ -195,9 +196,16 @@
                                         <span aria-hidden="true ">&times;</span>
                                     </button>
                                 </div>
-                                <div class="modal-body ">...</div>
+                                <div class="modal-body">
+                                    <a href="#" class="card-link text-danger like">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                    <h4 class="modal-title">Book</h4>
+                                    <h6 class="modal-subtitle mb-2 text-muted">Author: </h6>
+                                    <button type="button" class="btn btn-sm btn-outline-info ml-1">Edit</button>
+                                </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-sm btn-outline-info ml-1">Save</button>
+                                    <button type="button" class="btn btn-sm btn-outline-info ml-1">Buy</button>
                                 </div>
                             </div>
                         </div>
@@ -454,7 +462,6 @@
                     </div>
                 </article>
             </section>
-
             <hr/>
 
             <!--NEWSLETTER-->
@@ -498,7 +505,7 @@
                 </ul>
             </div>
             <!--Legal SECTION-->
-            <div id="legal " class="site-footer " role="contentinfo ">
+            <div id="legal" class="site-footer" role="contentinfo">
                 <ul class="li">
                     <li>
                         <p>
@@ -509,16 +516,17 @@
                     </li>
                 </ul>
             </div>
-            <nav class="footer-nav " role="navigation">
+            <nav class="footer-nav" role="navigation">
                 <p>
                     <strong> Copyright ©2020 | Bookstore. All rights reserved.</strong> | Coded with
-                    <img class="love " src="assets/icons/hearth.svg " alt="heart " /> by
+                    <img class="love " src="assets/icons/hearth.svg " alt="heart" /> by
                     <a href="https://www.github.com/dianavile ">Diana Vilé.</a>
                 </p>
             </nav>
         </footer>
+
         <!-- END CONTAINER -->
-    </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <script src="/assets/js/modal.js"></script>
