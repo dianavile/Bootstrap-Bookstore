@@ -44,7 +44,7 @@
                 </div>
 
                 <!-- SEARCH TODO: add JS functionality -->
-                <form action="/action_page.php" method="post" id="searchform" class="col-xs-4 col-sm-4 col-md-5 col-xl-6 input-group my-3" onsubmit="return searchValidate()" autocomplete="on" role="primary" aria-label="search">
+                <form action="/action_page.php" method="post" id="searchform" class="col-xs-4 col-sm-4 col-md-5 col-xl-6 input-group my-3" onsubmit="return searchValidate()" autocomplete="on" role="primary" aria-label="search" class="needs-validation" novalidate>
                     <input id="searchbar" type="text" class="form-control form-control-sm" placeholder="Search a book" aria-label="Search book" aria-describedby="basic-addon2" required/>
                     <div class="input-group-append">
                         <button class="search-button btn btn-sm btn-outline-info" onclick="inSearchValid()" type="button">
@@ -71,7 +71,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="container">
-                                        <form action="/action_page.php" method="post" id="registerform" name="loginForm" onsubmit="return registerValidate()" autocomplete="on">
+                                        <form action="/action_page.php" method="post" id="registerform" name="loginForm" onsubmit="return registerValidate()" autocomplete="on" class="needs-validation" novalidate>
                                             <div class="form-group">
                                                 <div class="form-row">
                                                     <label for="Email">Email</label>
@@ -140,7 +140,7 @@
 
                     <!-- LOGIN Button trigger modal -->
                     <button type="button" class="btn btn-sm btn-outline-info ml-1" data-toggle="modal" data-target="#loginModal">Login</button>
-                    <!-- Login Modal -->
+                    <!-- LOGIN Modal -->
                     <div class="modal fade container-fluid" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -153,12 +153,12 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="/action_page.php" method="post" id="loginform" name="loginForm" onsubmit="return loginValidation()" autocomplete="on">
+                                    <form action="/action_page.php" method="post" id="login" name="loginForm" onsubmit="return loginValidation()" autocomplete="on" class="needs-validation" novalidate>
                                         <div class="form-group">
                                             <div class="form-row">
                                                 <label for="Email2">Email</label>
-                                                <input type="email" class="form-control" id="Email2" value="name@gmail.com" aria-describedby="emailHelp" placeholder="Enter email" required autocomplete="username">
-                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                                <input type="email" class="form-control" id="Email2" value="name@gmail.com" aria-describedby="emailHelp" placeholder="Enter email" autocomplete="username" required>
+                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email.</small>
                                                 <div id="email_error" class="invalid-feedback"></div>
                                             </div>
                                         </div>
@@ -174,7 +174,6 @@
                                     <h6 class="font-weight-light"></h6> New?
                                     <button type="submit" class="btn btn-sm btn-outline-info ml-1">Register</button>
                                     </h6>
-                                    <button type="button" class="btn btn-sm btn-outline-info ml-1">Save</button>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +183,7 @@
                     <button type="button" class="btn btn-sm btn-outline-info ml-1" data-toggle="modal" data-target="#cardModal">
                         <img src="assets/icons/shopping-cart.svg "alt="shopping-cart"/>
                     </button>
-                    <!-- CARD Modal -->
+                    <!-- CARD Modal: NOT OPERATIONAL YET-->
                     <div class="modal fade container-fluid" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="cardModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -530,6 +529,8 @@
 
     <!-- Optional JavaScript -->
     <script src="/assets/js/modal.js"></script>
+    <script src="/assets/js/validate.js"></script>
+
     <script src="/assets/js/validateSearch.js"></script>
     <script src="/assets/js/validateRegister.js"></script>
     <script src="/assets/js/validateLogin.js"></script>
@@ -539,5 +540,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+
+</html>
 
 </html>

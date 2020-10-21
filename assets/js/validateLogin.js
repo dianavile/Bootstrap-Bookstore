@@ -3,7 +3,7 @@
 //declare variables
 const loginform = document.getElementById('login.form');
 const Email2 = document.getElementById('Email2');
-	const Password2 = document.getElementById('Password2');
+const Password2 = document.getElementById('Password2');
 	
 //add Event on submit
 loginform.addEventListener('submit', e => {
