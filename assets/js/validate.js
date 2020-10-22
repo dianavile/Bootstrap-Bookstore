@@ -2,6 +2,9 @@
 /* jshint esversion:6*/
 
 //declare forms variable
+//id=searchform, name= searchForm
+//id=loginform name= loginForm
+//id=registerform, name = registerForm
 //const search = document.getElementById("myForm");
 //const register= document.getElementById('register.form');
 //const loginform = document.getElementById('login.form');
