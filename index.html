@@ -44,14 +44,13 @@
                 </div>
 
                 <!-- SEARCH TODO: add JS functionality -->
-                <form action="/action_page.php" method="post" id="searchform" class="col-xs-4 col-sm-4 col-md-5 col-xl-6 input-group my-3" onsubmit="return searchValidate()" autocomplete="on" role="primary" aria-label="search" class="needs-validation" novalidate>
+                <form action="" method="POST" id="searchform" name="searchForm" class="col-xs-4 col-sm-4 col-md-5 col-xl-6 input-group my-3" onsubmit="return searchValidate()" autocomplete="on" role="primary" aria-label="search">
                     <input id="searchbar" type="text" class="form-control form-control-sm" placeholder="Search a book" aria-label="Search book" aria-describedby="basic-addon2" required/>
                     <div class="input-group-append">
                         <button class="search-button btn btn-sm btn-outline-info" onclick="inSearchValid()" type="button">
                             <img src="assets/icons/magnifier.svg" alt="magnifier search-icon"/>
                         </button>
-                        <div id="search_error" class="invalid-feedback">Enter a searchword.</div>
-                        <div class="invalid-tooltip"> Please provide minimul three characters.</div>
+                        <div id="search_error" class="invalid-feedback"></div>
                     </div>
                 </form>
 
@@ -73,7 +72,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="container">
-                                        <form action="/action_page.php" method="post" id="registerform" name="loginForm" onsubmit="return registerValidate()" autocomplete="on" class="needs-validation" novalidate>
+                                        <form action="/action_page.php" method="post" id="registerform" name="registerForm" onsubmit="return registerValidate()" autocomplete="on">
                                             <div class="form-group">
                                                 <div class="form-row">
                                                     <label for="Email">Email</label>
@@ -162,7 +161,7 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="/action_page.php" method="post" id="login" name="loginForm" onsubmit="return loginValidation()" autocomplete="on" class="needs-validation" novalidate>
+                                    <form action="/action_page.php" method="post" id="login" name="loginForm" onsubmit="return loginValidation()" autocomplete="on">
                                         <div class="form-group">
                                             <div class="form-row">
                                                 <label for="Email2">Email</label>
